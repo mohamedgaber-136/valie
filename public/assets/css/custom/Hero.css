@@ -1,0 +1,25 @@
+.MainTitle {
+    font-weight: 500;
+    font-size: clamp(24px, 5vw, 45px); /* Responsive between 24px and 45px */
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #D2AF00;
+}
+
+.subTitle {
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 20px); /* Responsive between 14px and 20px */
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+    color: #D2AF00;
+}
+
+.iconImageONE {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 20%;
+    z-index: 99999;
+    right: 0%;
+}

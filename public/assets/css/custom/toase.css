@@ -1,0 +1,22 @@
+.toast{
+    position: fixed;
+    color: white;
+    left: 25px;
+    z-index: 99999;
+    bottom: 25px;
+}
+.error{
+    
+    background-color: red;
+}
+.Success{
+    
+    background-color: green;
+}
+.closeBtnToast{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    padding: 0 !important;
+    z-index: 99;
+}

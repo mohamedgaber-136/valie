@@ -1,0 +1,39 @@
+.contact-bar{
+
+    background-color:#30758a22 !important
+}
+.special-label{
+    display: none !important;
+}
+.btnSend{
+    width: 272.5220031738281px;
+height: 40px;
+background-color: transparent;
+border-width: 1px;
+border: #D2AF00 solid 1px;
+border-radius:10px;
+color :#D2AF00;
+}
+.rounded-25{
+    border-radius: 25px !important;
+}
+.bg-Contact {
+ background-image: url(../../imgs/contact/Contact.png);
+}
+.bg-transperncy{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+.newLabel{
+    z-index: 99999;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.textAreaField{
+    resize: none !important;
+    height: 100px !important;
+}
