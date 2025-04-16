@@ -23,7 +23,7 @@ const CustomNavbar = () => {
     <Navbar
       expand="lg"
       fixed="top"
-      className={`custom-navbar ${scrolled ? 'scrolled' : ''}`}
+      className={`custom-navbar ${scrolled ? 'scrolled scrolledCustom' : ''}`}
       dir="rtl"
     >
         <Navbar.Brand href="#" className="text-white">

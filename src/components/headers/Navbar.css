@@ -2,15 +2,21 @@
     background-color: transparent;
     transition: background-color 0.3s ease;
     z-index: 99999999999;
-    padding: 10px 50px ;
+    padding: 10px 50px 
+    ;
+    transition: 0.2s;
   }
   @media(max-width:768px){
-    .custom-navbar {
-      padding: 5px 20px;
-      top: 20px;
-      width: 85%;
-      right: 6%;
-      border-radius: 20px;
+  .custom-navbar{
+    padding: 5px 5px;
+    border-radius: 10x;
+  }
+    .scrolledCustom{
+        padding: 5px 20px;
+        top: 20px;
+        width: 85%;
+        right: 6%;
+        border-radius: 20px;
     }
   }
   .custom-navbar.scrolled {
