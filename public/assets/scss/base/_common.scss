@@ -89,6 +89,7 @@ video {
 main {
   display: block;
   clear: both;
+  overflow-x: hidden;
 }
 thead {
   font-weight: 600;
