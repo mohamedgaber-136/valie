@@ -1,6 +1,5 @@
 import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
-import MobailHeader1 from "@/components/headers/MobailHeader1";
+
 import Facts from "@/components/common/facts/Facts";
 
 import Hero from "@/components/homes/home-1/Hero";
@@ -18,9 +17,10 @@ import { Album } from "@/components/Album/Album";
 import CustomNavbar from "@/components/headers/CustomNavbar";
 
 const metadata = {
-  title: "Maviways || Lixride Chauffeur Limousine Transport and Car Hire Reactjs Template",
-  description: "Lixride Chauffeur Limousine Transport and Car Hire Reactjs Template",
+  title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
+  description: "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
 };
+
 
 export default function Home() {
   
