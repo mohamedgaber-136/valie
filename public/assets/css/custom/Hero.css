@@ -1,25 +1,25 @@
 .MainTitle {
-    font-weight: 500;
-    font-size: clamp(24px, 5vw, 45px); /* Responsive between 24px and 45px */
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #D2AF00;
+    font-weight: 500 !important;
+    font-size: clamp(24px, 5vw, 45px) !important;
+    line-height: 100% !important;
+    letter-spacing: 0% !important;
+    color: #D2AF00 !important;
 }
 
 .subTitle {
-    font-weight: 400;
-    font-size: clamp(14px, 2vw, 20px); /* Responsive between 14px and 20px */
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-bottom: 10px;
-    color: #D2AF00;
+    font-weight: 400 !important;
+    font-size: clamp(14px, 2vw, 20px) !important;
+    line-height: 100% !important;
+    letter-spacing: 0% !important;
+    margin-bottom: 10px !important;
+    color: #D2AF00 !important;
 }
 
 .iconImageONE {
-    position: absolute;
-    width: 250px;
-    height: 100px;
-    top: 20%;
-    z-index: 99999;
-    right: 0%;
+    position: absolute !important;
+    width: 250px !important;
+    height: 100px !important;
+    top: 20% !important;
+    z-index: 99999 !important;
+    right: 0% !important;
 }

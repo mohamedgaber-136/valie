@@ -57,5 +57,9 @@ TABLE CONTENT
     margin-bottom: 15px;
   }
 }
+*{
+  font-family: "Tajawal", sans-serif;
+
+}
 @import "node_modules/react-modal-video/scss/modal-video.scss";
 @import "./custom.scss";

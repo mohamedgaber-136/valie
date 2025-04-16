@@ -1,0 +1,78 @@
+.teamTitle{
+    color: #075981;
+    font-family: 'GE SS Two';
+font-weight: 800;
+font-size: clamp(1.25rem, 2vw + 0.5rem, 1.875rem); /* ~20px to 30px */
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+}
+.teamContainer{
+    padding:100px 250px ;
+}
+@media(max-width:992px){
+    .teamContainer{
+        padding:20px ;
+    }
+}
+.AgentName{
+    font-family: 'GE SS Two';
+font-weight: 600;
+font-size: clamp(1.125rem, 2vw + 0.5rem, 1.6875rem); /* ~18px to 27px */
+line-height: 100%;
+letter-spacing: 0%;
+
+    color: #075981;
+}
+.AgentTitle{
+    color: #9A9680;
+    font-family: 'GE SS Two';
+    font-weight: 400;
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.0625rem); /* ~14px to 17px */
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+.Agentexp{
+    color: #064B73;
+    font-family: 'GE SS Two';
+font-weight: 300;
+font-size: clamp(1rem, 1vw + 0.3rem, 1.125rem); /* ~16px to 18px */
+line-height: 100%;
+letter-spacing: 0%;
+
+
+}
+.dataContent{
+border-bottom: 2px solid #707070 ;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.teamImgContainer{
+    position: relative;
+}
+.vissionimg{
+    position: absolute;
+    width: 500px;
+    z-index: 1;
+    opacity: 0.8;
+    top: 0;
+}
+.profileImg{
+    z-index: 2;
+}
+.DataContainer{
+    margin-block: 300px;
+}
+.floatCard{
+    position: relative;
+    top: -200px;
+}
+@media(max-width:992px){
+    .floatCard{
+        top: 0;
+    }
+    .DataContainer{
+        margin-block: 50px;
+    }
+}

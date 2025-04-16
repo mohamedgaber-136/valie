@@ -6,29 +6,25 @@ import PhoneInput from "react-phone-input-2";
 import ReCAPTCHA from "react-google-recaptcha";
 export default function ContactForm() {
     const [phone, setPhone] = useState("+966");
-  const site_Key='6LeI7doqAAAAAOcRiMaNfaRGFuBS52wcnS9rXuLt'
-  const [capCal,setCapVal]=useState(null)
-  console.log(capCal)
+
   useEffect(() => {
     // Focus event
     activeInputFocus();
   }, []);
   return (
-    <section className="section my-5 flex jusity-center ">
-      <div className="container-sub bg-Contact border rounded-25 p-5 rounded">
+    <section className="section px-2 my-5 flex jusity-center ">
+      <div className="container-sub bg-Contact  rounded-25 p-5 rounded">
         <div className="">
-          <h3 className="mb-10 text-center text-white fw-lighter wow fadeInUp">
+          <h3 className="mb-10 text-center text-white fw-bold wow fadeInUp">
 تواصل معنا الان          </h3>
           <div className="row gap-2 justify-content-center align-items-start">
 
-          <div className="form-contact  col-12  col-md-6 form-comment wow rounded-5 rounded p-4 fadeInUp">
+          <div className="form-contact  wow fadeInUp col-12  col-md-6 form-comment wow rounded-5 rounded p-4 fadeInUp">
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="row">
                 <div className="col-lg-6 col-md-6">
                   <div className="form-group">
-                    {/* <label className="form-label newLabel  bg-transperncy" htmlFor="FirstName">
-                  الاسم
-                    </label> */}
+                  
                     <label className="form-label newLabel" htmlFor="FirstName">
                     الاسم
                     </label>

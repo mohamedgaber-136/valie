@@ -1,0 +1,67 @@
+.MainTitle {
+    font-weight: 500 !important;
+    font-size: clamp(24px, 5vw, 45px) !important;
+    line-height: 100% !important;
+    letter-spacing: 0% !important;
+    color: #D2AF00 !important;
+}
+
+.subTitle {
+    font-weight: 400 !important;
+    font-size: clamp(17px, 2vw, 20px) !important;
+    line-height: 100% !important;
+    letter-spacing: 0% !important;
+    margin-bottom: 10px !important;
+    color: white !important;
+}
+
+.iconImageONE {
+    position: absolute !important;
+    width: 250px !important;
+    height: 100px !important;
+    top: 20% !important;
+    z-index: 99999 !important;
+    right: 0% !important;
+}
+.logoImg{
+    width: 100px;
+}
+.banner-home1{
+    width:100vw ;
+    height: 100vh;
+    background-image: url(../../../../public/assets/imgs/BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.box-swiper{
+    padding-inline: 20px;
+    width:30%;
+position: relative !important;
+top: 55%;
+}
+@media(max-width:1080px){
+    .box-swiper{
+        padding-inline: 20px;
+        width:80%;
+    position: relative !important;
+    top: 45%;
+    }
+}
+@media(max-width:992px){
+    .box-swiper{
+        padding-inline: 20px;
+        width:80%;
+    position: relative !important;
+    top: 45%;
+    }
+}
+@media(max-width:768px){
+    .box-swiper{
+        padding-inline: 20px;
+        width:100%;
+    position: relative !important;
+    top: 45%;
+    }
+}

@@ -1,0 +1,70 @@
+body{
+    overflow-x: hidden !important;
+}
+.title{
+    font-family: 'GE SS Two';
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2vw + 1rem, 1.875rem); /* Responsive between ~24px and 30px */
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#D8BE36
+    
+}
+.MainTitle{
+color:#064B73;
+font-family: 'GE SS Two';
+font-weight: 500;
+font-size: clamp(2.25rem, 5vw + 1rem, 3.3125rem); /* ~36px to 53px */
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.contentPurpose{
+    font-family: 'Tajawal';
+    font-weight: 500;
+    font-size: clamp(1.1rem, 2vw + 0.5rem, 1.25rem); /* ~16px to 20px */
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#474747;
+    position: relative;
+}
+.contentPurpose::before{
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background-color: #064B73;
+    border-radius: 50%;
+}
+.PurposeContainer{
+    padding:100px 250px ;
+}
+@media(max-width:992px){
+    .PurposeContainer{
+        padding:20px ;
+    }
+      
+}
+.leftImg,.bottomImg{
+    position: absolute;
+}
+.bottomImg{
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+}
+.leftImg{
+    right: 5%;
+    top: 0;
+}
+.grandparen{
+    background: #dfeaef57;
+
+}
+.floatImg{
+    position:relative ;
+    right: 250px;
+}

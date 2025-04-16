@@ -1,9 +1,9 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import img from "../../../public/assets/imgs/icons/vission.png"
 export const VissionAndMission = () => {
     const data = [ 
         {
-            icon: "../../../public/assets/imgs/icons/vission.png",
+            icon:img ,
             title:'رؤيتنا',
             content:[
 "تقديم مفهوم جديد"
@@ -16,7 +16,7 @@ export const VissionAndMission = () => {
             ]
         },
         {
-            icon: "../../../public/assets/imgs/icons/vission.png",
+            icon: img,
             title:'رسالتنا',
             content:[
 "تقديم خدمات التقييم"
@@ -28,7 +28,7 @@ export const VissionAndMission = () => {
 'المعايير المحلية والدولية.'            ]
         },
         {
-            icon: "../../../public/assets/imgs/icons/vission.png",
+            icon: img,
             title:'قيمنا',
             content:[
 'النزاهة',
@@ -42,7 +42,7 @@ export const VissionAndMission = () => {
     <div className='container d-flex flex-column align-items-center align-items-lg-stretch flex-lg-row justify-content-center gap-5 my-50'>{
 
         data.map((item,index)=>    <Card key={index} style={{ width: '18rem' ,borderRadius:"20px"
-        }} className='d-flex flex-column   boxShadowCard justify-content-between p-4 border-0'>
+        }} className='d-flex flex-column   boxShadowCard justify-content-between  wow fadeInUp p-4 border-0'>
             <div className="d-flex justify-content-center">
 
         <Card.Img variant="top" src={item.icon} style={{ width: '75px' }} />
