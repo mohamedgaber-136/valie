@@ -1,5 +1,4 @@
 import {
-  legalLinks,
   links1,
   links2,
   socialMediaPlatforms,
@@ -7,11 +6,7 @@ import {
 
 import { Link } from "react-router-dom";
 import logoImg from "../../../public/assets/imgs/Logo/LogoWhite.png"
-import { FloatBtn } from "../FloatBtn/FloatBtn";
-// import TawkToChat from "../liveChat/TawkChat";
-import izyico from '../../../public/assets/imgs/payments/iyzico.png'
-import visa from '../../../public/assets/imgs/payments/Color.png'
-import masterCard from '../../../public/assets/imgs/payments/Logotype.png'
+
 export default function Footer1() {
   return (
     <footer className="footer">
@@ -46,19 +41,19 @@ export default function Footer1() {
               </h5>
               <ul className="menu-footer wow fadeInUp">
                 {links1.map((elm, i) => (
-                  <li key={i} className="text-center fw-bolder">
+                  <li key={i} className="text-end text-md-center fw-bolder">
                     <Link to={elm.href}>{elm.text}</Link>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="col-lg-4 col-6  d-flex  justify-content-start flex-column align-items-center  align-items-md-start mb-40">
-              <h5 className="text-18-medium text-center  text-gold mb-20 wow fadeInUp">
+              <h5 className="text-18-medium text-end text-md-center  text-gold mb-20 wow fadeInUp">
                اتصل بنا
               </h5>
               <ul className="menu-footer wow fadeInUp">
                 {links2.map((elm, i) => (
-                  <li key={i} className="text-end">
+                  <li key={i} className="text-end text-md-center">
                     <a href={elm.href}>{elm.name}</a>
                   </li>
                 ))}

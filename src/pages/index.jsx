@@ -7,7 +7,6 @@ import Hero from "@/components/homes/home-1/Hero";
 import MetaComponent from "@/components/common/MetaComponent";
 
 
-import _ from "lodash"; // ✅ Added Lodash for better deep comparison
 import ContactForm from "@/components/contact/ContactForm";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
 import { Purpose } from "@/components/Purpose/Purpose";

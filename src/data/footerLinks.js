@@ -21,37 +21,18 @@ export const socialMediaPlatforms = [
 ];
 
 export const links1 = [
-  { id: 1, text: "من نحن", href: "/about" },
-  { id: 2, text: "خدماتنا", href: "/fleet-list" },
-  { id: 3, text: "شركاؤنا", href: "/contact" },
-  { id: 3, text: "الاسئله الشائعه", href: "/contact" },
-  { id: 3, text: "الشروط والاحكام ", href: "/contact" },
+  { id: 1, text: "من نحن", href: "#clients" },
+  { id: 2, text: "خدماتنا", href: "#clients" },
+  { id: 3, text: "شركاؤنا", href: "#clients" },
+  { id: 3, text: "الاسئله الشائعه", href: "#about" },
+  { id: 3, text: "الشروط والاحكام ", href: "#clients" },
 ];
 
 
 
 export const links2 = [
   { id: 1, name: "A 12611-2506, ,Riyadh 8991 :Wasel ", href: "#" },
-  { id: 2, name: "920009518", href: "#" },
-  { id: 3, name: "info@valie.sa", href: "#" },
+  { id: 2, name: "920009518", href: "tel:920009518" },
+  { id: 3, name: "info@valie.sa", href: "mailto:info@valie.sa" },
 
-];
-export const links3 = [
-  { id: 1, name: "Intercity rides", href: "#" },
-  { id: 2, name: "Limousine service", href: "#" },
-  { id: 3, name: "Chauffeur service", href: "#" },
-  { id: 4, name: "Private car service", href: "#" },
-  { id: 5, name: "Ground transportation", href: "#" },
-  { id: 6, name: "Airport transfer", href: "#" },
-];
-export const links4 = [
-  { id: 1, name: "Executive Class", href: "#" },
-  { id: 2, name: "Prestige Class", href: "#" },
-  { id: 3, name: "Royal Class", href: "#" },
-];
-export const legalLinks = [
-  { id: 1, name: "Terms", href: "/about" },
-  { id: 2, name: "Privacy policy", href: "/Privacy" },
-  { id: 3, name: "Legal notice", href: "/about" },
-  { id: 4, name: "Accessibility", href: "/about" },
 ];
