@@ -1,6 +1,10 @@
 body{
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .list-how.slider-nav-thumbnails .slick-list .slick-track .slick-current li h4,
 .list-how.slider-nav-thumbnails .slick-list .slick-track .slick-current li p {
   opacity: 1;

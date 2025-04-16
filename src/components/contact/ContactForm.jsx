@@ -11,14 +11,14 @@ export default function ContactForm() {
     activeInputFocus();
   }, []);
   return (
-    <section className="section px-2 my-5 flex jusity-center ">
-      <div className="container-sub bg-Contact  rounded-25 p-5 rounded">
+    <section className="section px-2 my-5 flex jusity-center  " >
+      <div className="container-sub bg-Contact  rounded-25  p-4 p-md-5 rounded">
         <div className="">
           <h3 className="mb-10 text-center text-white fw-bold wow fadeInUp">
 تواصل معنا الان          </h3>
           <div className="row gap-2 justify-content-center align-items-start">
 
-          <div className="form-contact  wow fadeInUp col-12  col-md-6 form-comment wow rounded-5 rounded p-4 fadeInUp">
+          <div style={{zIndex:2}} className="form-contact  wow fadeInUp col-12 p-md-4  col-md-6 form-comment wow rounded-5 rounded p-2 fadeInUp">
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="row">
                 <div className="col-lg-6 col-md-6">

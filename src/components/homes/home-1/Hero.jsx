@@ -5,7 +5,7 @@ import Icon2 from '../../../../public/assets/imgs/icons/icon2.png'
 import './hero.css'
 export default function Hero() {
   return (
-    <section className=" banner-home1">
+    <section className=" banner-home1" id="home">
       <div className="box-swiper">
         <img src={Icon1} alt="" className="iconImageONE" />
         <img src={Icon2} alt=""  className="iconImageONE"/>

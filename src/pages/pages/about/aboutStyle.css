@@ -1,0 +1,28 @@
+.LeaveMssg{
+    /* background-color:  #F1F1F6    ; */
+    height: 400px;
+}
+.floatBtnContact{
+    position: absolute;
+    left: 30px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.bluBg{
+    position: absolute;
+    width: 500px;
+    left: 0;
+    background: #032E4F;
+    height: 375px;
+    top: -50px;
+    z-index: -1;
+}
+.bluBg2{
+    position: absolute;
+    width: 500px;
+    right: 0;
+    background: #032E4F;
+    height: 375px;
+    top: -50px;
+    z-index: -1;
+}

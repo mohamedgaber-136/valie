@@ -1,223 +1,141 @@
-import MobailHeader1 from "@/components/headers/MobailHeader1";
 import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
 import MetaComponent from "@/components/common/MetaComponent";
-import CvModal from '@/components/Modal/CvModal';
-import collegeImg from '../../../../public/assets/imgs/Test/about.png'
-import personOne from "../../../../public/assets/imgs/Test/Eyup.png"
-import persontwo from "../../../../public/assets/imgs/Test/sofia.png"
-import personthree from "../../../../public/assets/imgs/Test/Elif.jpg"
-import mobileImg from "../../../../public/assets/imgs/Test/MobileApp.jpg"
-import appStore from "../../../../public/assets/imgs/Test/app-store.svg"
-import googlePlay from "../../../../public/assets/imgs/Test/google-play.svg"
-import '../../../../public/assets/css/custom/about.css'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Container, Row, Col, Form, Button, InputGroup } from 'react-bootstrap';
+import img1 from '../../../../public/assets/imgs/1.png'
+import img2 from '../../../../public/assets/imgs/2.png'
+import img3 from '../../../../public/assets/imgs/3.png'
+import img4 from '../../../../public/assets/imgs/4.png'
+import './aboutStyle.css'
 import "react-lazy-load-image-component/src/effects/blur.css";
+import CustomNavbar from "@/components/headers/CustomNavbar";
+import { AboutUs } from "@/components/AboutUs/AboutUs";
+import { Purpose } from "@/components/Purpose/Purpose";
+import { PurposeReverse } from "@/components/Purpose/PurposeRevese";
  const AboutTest = () => {
-    const metadata = {
-        title:
-          "About || Lixride Chauffeur Limousine Transport and Car Hire Reactjs Template",
-        description:
-          "Lixride Chauffeur Limousine Transport and Car Hire Reactjs Template",
-      };
+  const metadata = {
+    title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
+    description: "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
+  };
   return (
- <>
+ <div className="AlbumParent  position-relative">
     <MetaComponent meta={metadata} />
-       <Header1 /> <MobailHeader1 />
+      <CustomNavbar bg='blueBg' />
 
-      <main>
-        <section id="about" className='py-5'>
-          <div className="cover  flex-column set-center ">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-5 align-self-center">
-                  <h1 className="title mb-4">About Us</h1>
-                  <p className="last-update fw-normal mb-5">
-                    <span className="servex-font">Maviways</span> is a leading
-                    logistics-technology company established in 2015 to provide
-                    high-quality end-to-end supply chain management and
-                    operations to expand and strengthen the logistics industry
-                    across the region.
-                  </p>
-                </div>
-                <div className="col-md-7 align-self-center">
-                  <LazyLoadImage
-                   effect="blur"
-                    src={collegeImg}
-                    className="img-fluid h-100"
-                    alt="About Servex"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+      <main >
+ <AboutUs/>
+ <div className="bgItem"></div>
+ <Purpose
+  title="أولاً"
+  subtitle="فريق العمل"
+  data={[
+    "في شركة فالي للتقييم العقاري نعمل وفقًا لأسس واضحة ومحكمة لضمان أعلى دقة في عمليات التقييم.",
+    "يبدأ تقييمكم بفهم متكامل لكل مشروع أو عميل حتى نتمكن من تلبية متطلباته باحترافية عالية."
+  ]}
+  image={img1}
+/>
 
-          <div className="container py-10">
-            <div className="row pb-10">
-              <div className="col-md-5 offset-md-1">
-                <div className="card gray-card border-0 py-3 py-md-5 px-4 mb-3 mb-md-5">
-                  <h2 className="title mb-0 mb-md-4">Our Vision</h2>
-                  <p className="paragraph">
-                    To be the innovation and solution for the best customer
-                    experience by showing the same sensitivity and care in all
-                    shipments we carry, regardless of their quality and
-                    quantity.
-                  </p>
-                </div>
-              </div>
+<PurposeReverse
+  title="ثانيًا"
+  subtitle="إجراءات التقييم"
+  data={[
+    "مراجعة العقار واستلام المستندات المطلوبة من المالك أو وكيله",
+    "التحقق الكامل للمعلومات عن العقار ورصد المدخلات",
+    "إعداد صور للعقار داخليًا وخارجيًا",
+    "إجراء مسح ميداني للمنطقة التي يقع فيها العقار",
+    "تحليل السوق العقاري وتحليل الصفقات المماثلة",
+    "إعداد التقرير المبدئي ومشاركته مع العميل للمراجعة",
+    "إرسال نسخة من التقرير النهائي بعد التأكد من صحة الإجراءات"
+  ]}
+  image={img2}
+/>
 
-              <div className="col-md-5">
-                <div className="card gray-card border-0 py-3 py-md-5 px-4 mb-5">
-                  <h2 className="title mb-0 mb-md-4">Our Mission</h2>
-                  <p className="paragraph">
-                    Sustainable quality and customer satisfaction by listening
-                    to our customers to provide them with value and
-                    technology-oriented solutions and to innovate.
-                  </p>
-                </div>
-              </div>
-            </div>
+<Purpose
+  title="ثالثًا"
+  subtitle="إعداد التقرير"
+  data={[
+    "يقوم الفريق بإعداد التقرير بشكل مفصل شاملاً:",
+    "بيانات التعريف التفصيلية",
+    "موقع العقار ووصفه",
+    "صور جوية وموضوعية",
+    "تحليل طريقة الوصول للقيمة السوقية",
+    "مقارنات ومؤشرات حسابية"
+  ]}
+  image={img3}
+/>
 
-            <div className="row gap-md-0 gap-3 py-10">
-              <h1 className="title text-center mb-md-5 pb-md-5">
-                Leadership Team
-              </h1>
-
-              <div className=" col-12 col-lg-4  text-center">
-                  <LazyLoadImage
-                  src={personOne} 
-                                    effect="blur"
-                  className="ship-image img-fluid mb-4"
-                  alt="Eyup Mubtasim"
+<PurposeReverse
+  title="رابعًا"
+  subtitle="الغرض من عملية التقييم"
+  data={[
+    'تحديد القيمة السوقية للعقار',
+    'تحديد القيمة الإيجارية للعقار',
+    'قياس القيمة العادلة بتطبيق معايير مجلس المحاسبة الدولية',
+    'تقييم الصناديق العقارية حسب متطلبات هيئة السوق المالية',
+    'التقييم لغرض حساب نسبة الزكاة الشرعية السنوية',
+    'التقييم لغرض توزيع الأملاك والإرث',
+    'تحديد أفضل استخدام للعقار'
+  ]}
+  image={img4}
+/>
+ <div className="LeaveMssg position-relative">
+  <div className="bluBg"></div>
+  <div className="bluBg2"></div>
+      <div style={{ backgroundColor: '#f3f4f8', padding: '5rem 0',    }} className=" d-flex justify-content-center
+      align-items-center my-5">
+      <Container>
+        <Row className="justify-content-center align-items-center text-center mb-4">
+          <Col md={10} lg={8}>
+            <h5 style={{
+              fontFamily: 'Tajawal',
+              fontWeight: 700,
+              fontSize: 'clamp(1rem, 1.5vw + 0.3rem, 25px)',
+              color: '#0a2c52'
+            }}>
+              اترك بريدك الالكتروني ليصلك منا كل جديد
+            </h5>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col md={10} lg={6}>
+            <Form>
+              <InputGroup className="position-relative">
+            
+                <Form.Control
+                  type="email"
+                  placeholder="اكتب بريدك الالكتروني"
+                  style={{
+                    fontFamily: 'Tajawal',
+                    textAlign: 'right',
+                    borderTopRightRadius: '8px',
+                    borderBottomRightRadius: '8px',
+                    borderLeft: 'none',
+                    paddingRight: '1rem'
+                  }}
+                  className="border p-2"
                 />
-                <h3 className="ship-name">Eyup Mubtasim</h3>
-                <h6 className="ship-position fw-light">Executive Director
-                </h6>
-              </div>
 
-              <div className=" col-12 col-lg-4  text-center">
-                 <LazyLoadImage
-                   effect="blur"
-                   src={persontwo}
-                  className="ship-image img-fluid mb-4"
-                  alt="Ali Al Mesned"
-                />
-                <h3 className="ship-name">Mrs Sofia khafallah </h3>
-                <h6 className="ship-position fw-light">
-                 CEO
-                </h6>
-              </div>
+                <div className="floatBtnContact py-1">     <Button  variant="dark" style={{
+                  fontFamily: 'Tajawal',
+                 borderRadius:'10px',
+                  padding: '0.6rem 1.5rem',
+                  backgroundColor: '#032E4F'
 
-              <div className=" col-12 col-lg-4  text-center">
-                   <LazyLoadImage
-                   effect="blur"
-                  src={personthree}
-                  className="ship-image img-fluid mb-4"
-                  alt="Mrs Elif Sinem"
-                />
-                <h3 className="ship-name">Mrs Elif Sinem</h3>
-                <h6 className="ship-position fw-light">Human Resources</h6>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-md-8 offset-md-2">
-                <h1 className="small-title mb-4 my-5">Join Our Crew</h1>
-                <p className="small-paragraph fs-5 fw-light pb-10 m-0">
-                  Your contributions will empower businesses to conquer
-                  ambitious goals, tackle supply chain obstacles head-on, and
-                  transform their victories into positive impacts on our planet.
-                  <br />
-                  <br />
-                  Ready to join our vibrant team? We are on the lookout for
-                  passionate individuals eager to make a mark with us.
-                  Currently, we have openings for:
-                </p>
-
-                <div className="border p-3 rounded-pill mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center drop mb-4">
-                  <h6 className=" fw-medium">Network Sales Specialist</h6>
-                  <h6>Istanbul, Türkiye - Fulltime</h6>
-                </div>
-
-                <div className="border p-3 rounded-pill d-flex justify-content-between flex-column  flex-md-row align-items-center drop mb-4">
-                  <h6 className="">Business Analyst</h6>
-                  <h6>Istanbul, Türkiye - Fulltime</h6>
-                </div>
-
-                <div className="border p-3 rounded-pill  d-flex justify-content-between flex-column  flex-md-row align-items-center drop mb-4">
-                  <h6 className="">Driver</h6>
-                  <h6>Istanbul, Türkiye - Fulltime</h6>
-                </div>
-                <div className="border p-3 rounded-pill d-flex justify-content-between flex-column  flex-md-row align-items-center drop mb-4">
-                  <h6 className="">Accountant</h6>
-                  <h6>İstanbul, Türkiye - Fulltime</h6>
-                </div>
-<div className="w-100 d-flex justify-content-center">
-
-                <CvModal/>
-</div>
-              </div>
-            </div>
-         
-          </div>
-        </section>
-
-        <section id="application">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-md-7 px-0">
-                <LazyLoadImage
-                   effect="blur"
-                  src={mobileImg}
-                  className="img-fluid app"
-                  alt="Application"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="col-md-5 set-center flex-column mt-5 mt-md-0">
-                <h1 className="title text-black text-center fw-medium">
-                  Download your personalized Maviways mobile app
-                </h1>
-                <p className="paragraph fw-light text-center my-0 my-md-5">
-                  Instantly access everything you want to know <br />
-                  about all your orders.
-                </p>
-
-                <div className="download text-center">
-                  <h3 className="download-now mb-md-5">Soon!</h3>
-
-                  <div className="set-center mb-3">
-                    <a href="">
-                      <LazyLoadImage
-                   effect="blur"
-                        src={appStore}
-                        className="img-fluid "
-                        alt="App Store"
-                        style={{ maxWidth: "180px" }}
-                      />
-                    </a>
-
-                    <a href="">
-                      <LazyLoadImage
-                   effect="blur"
-                        src={googlePlay}
-                        className="img-fluid"
-                        alt="Google Play"
-                        style={{ maxWidth: "180px" }}
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                }}>
+                  إرسال
+                </Button></div>
+               
+              </InputGroup>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+      </div>
       </main>
  
 
         <Footer1 />
- </>
+ </div>
   )
 }
 export default AboutTest ;

@@ -4,7 +4,7 @@ import aboutImg from '../../../public/assets/imgs/about/about1.png'
 import { VissionAndMission } from './VissionAndMission'
 export const AboutUs = () => {
   return (
-    <div className='container position-relative d-flex flex-column gap-5 my-50'>
+    <div className='container position-relative d-flex flex-column gap-5 my-50' id="about">
            <div className="imgAbout"></div>
            <div className="imgAbout2"></div>
         <div className='my-5'>

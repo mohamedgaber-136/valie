@@ -49,6 +49,10 @@ letter-spacing: 0%;
     .floatImg{
         right:23px !important;
     }
+    .floatImg2{
+        position:relative ;
+        right: -23px !important;
+    }
 }
 .leftImg,.bottomImg{
     position: absolute;
@@ -69,4 +73,8 @@ letter-spacing: 0%;
 .floatImg{
     position:relative ;
     right: 250px;
+}
+.floatImg2{
+    position:relative ;
+    right: -250px;
 }

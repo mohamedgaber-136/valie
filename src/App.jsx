@@ -13,10 +13,10 @@ import { PaymentCards } from "./pages/pages/UserProfile/PaymentCards";
 // Lazy-loaded components to optimize performance
 const Home = lazy(() => import("./pages"));
 const HomePage1 = lazy(() => import("./pages/homes/home-1"));
+const AlbumPageLazy =lazy(() => import("./pages/pages/album/AlbumPage"));
 const AboutTest = lazy(() => import("./pages/pages/about/AboutTest"));
 const ContactPage1 = lazy(() => import("./pages/pages/contact"));
 const ContactPage2 = lazy(() => import("./pages/pages/contact-2"));
-const OurTeamPage = lazy(() => import("./pages/pages/our-team"));
 const PrivacyPolicy = lazy(() => import("./pages/pages/PrivacyPolicy"));
 const TeamSinglePage = lazy(() => import("./pages/pages/team-single"));
 const LoginPage = lazy(() => import("./pages/pages/login"));
@@ -83,7 +83,7 @@ function App() {
         <Route path="about" element={<AboutTest />} />
         <Route path="contact" element={<ContactPage1 />} />
         <Route path="contact-2" element={<ContactPage2 />} />
-        <Route path="our-team" element={<OurTeamPage />} />
+        <Route path="team" element={<AlbumPageLazy/>} />
         <Route path="Privacy" element={<PrivacyPolicy />} />
         <Route path="team-single/:id" element={<TeamSinglePage />} />
         <Route path="register">

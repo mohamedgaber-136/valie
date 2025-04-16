@@ -6,6 +6,9 @@
     ;
     transition: 0.2s;
   }
+  .blueBg{
+    background-color: #124264 !important;
+  }
   @media(max-width:768px){
   .custom-navbar{
     padding: 5px 5px;
@@ -76,4 +79,20 @@
       display: block !important;
     }
   }
-  
+  .linkNav{
+    position: relative !important;
+  }
+  .linkNav::before{
+    content: '';
+    position: absolute!important;
+    bottom: -2px !important;
+    background-color: white !important;
+    width: 0% !important;
+    left: 10px !important;
+    height: 2px;
+    z-index: 99999;
+    transition: 0.2s !important;
+  }
+  .linkNav:hover::before{
+    width: 80% !important;
+  }

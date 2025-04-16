@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function NotFound() {
   return (
     <>
-      <section className="section mt-120 mb-100">
+      <section className="section mt-120 mb-100" dir="rtl">
         <div className="container-sub">
           <div className="text-center">
             <img
@@ -13,16 +13,15 @@ export default function NotFound() {
               alt="luxride"
             />
             <h2 className="heading-44-medium color-text mt-50 mb-20 wow fadeInUp">
-              Oops! It looks like you're lost.
+              عذرًا! يبدو أنك تائه.
             </h2>
             <p className="color-text text-16 mb-25 wow fadeInUp">
-              The page you're looking for isn't available. Try to search again
-              or use the go to.
+              الصفحة التي تبحث عنها غير متوفرة. حاول البحث مرة أخرى أو العودة إلى الصفحة الرئيسية.
             </p>
             <Link className="btn btn-primary pl-50 pr-50 wow fadeInUp" to="/">
-              Go Back to Homepage
+              العودة إلى الصفحة الرئيسية
               <svg
-                className="icon-16 ml-5"
+                className="icon-16 mr-5"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.5"

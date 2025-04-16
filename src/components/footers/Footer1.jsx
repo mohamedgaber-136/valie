@@ -83,7 +83,6 @@ export default function Footer1() {
           </div>
         </div>
       </div>
-      <FloatBtn/>
      
     
     </footer>
