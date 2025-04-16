@@ -46,7 +46,9 @@ letter-spacing: 0%;
     .PurposeContainer{
         padding:20px ;
     }
-      
+    .floatImg{
+        right:23px !important;
+    }
 }
 .leftImg,.bottomImg{
     position: absolute;

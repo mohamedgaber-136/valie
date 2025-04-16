@@ -1,6 +1,5 @@
 import purposeImg from '../../../public/assets/imgs/purpose.png'
 import rightimg from '../../../public/assets/imgs/icons/purposeRightImg.png'
-import bottomImg from '../../../public/assets/imgs/icons/bottomIMGpurpose.png'
 import './purpose.css'
 export const Purpose = () => {
     const data = [
@@ -32,7 +31,6 @@ export const Purpose = () => {
             </div>
         </div>
         <img src={rightimg} className='leftImg' alt="" />
-        <img src={bottomImg} className='bottomImg' alt="" />
     </div>
     </div>
   )

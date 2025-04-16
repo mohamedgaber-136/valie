@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import '../../../public/assets/css/custom/contact.css'
 
 import PhoneInput from "react-phone-input-2";
-import ReCAPTCHA from "react-google-recaptcha";
 export default function ContactForm() {
     const [phone, setPhone] = useState("+966");
 
