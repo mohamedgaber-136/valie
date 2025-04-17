@@ -10,7 +10,7 @@ export const Purpose = ({ title, subtitle, data, image }) => {
           <div className="col-12 d-flex flex-column gap-3 p-0 m-0 col-md-6">
             <h4 className="title">{title}</h4>
             <h2 className="MainTitle">{subtitle}</h2>
-            <div className="d-flex flex-column gap-1">
+            <div className="d-flex CustomFont flex-column gap-1">
               {data.map((item, index) => (
                 <p className="contentPurpose" key={index}>
                   {item}

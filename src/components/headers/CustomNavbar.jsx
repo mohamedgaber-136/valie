@@ -39,7 +39,7 @@
               <Nav.Link href="/#home" className="text-white linkNav">الرئيسية</Nav.Link>
               <Nav.Link href="/about" className="text-white linkNav">عن فالي</Nav.Link>
               <Nav.Link href="/#services" className="text-white linkNav">خدماتنا</Nav.Link>
-              <Nav.Link href="team" className="text-white linkNav">فريق العمل</Nav.Link>
+              <Nav.Link href="/#team" className="text-white linkNav">فريق العمل</Nav.Link>
               <Nav.Link href="/#clients" className="text-white linkNav">عملاؤنا</Nav.Link>
               <Nav.Link href="contact" className="text-white linkNav">تواصل معنا</Nav.Link>
             </Nav>

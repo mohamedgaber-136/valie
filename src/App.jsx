@@ -8,7 +8,6 @@ import { LoadingPage } from "./pages/LoadingPage/LoadingPage";
 
 // Lazy-loaded components to optimize performance
 const Home = lazy(() => import("./pages"));
-const HomePage1 = lazy(() => import("./pages/homes/home-1"));
 const AlbumPageLazy =lazy(() => import("./pages/pages/album/AlbumPage"));
 const AboutTest = lazy(() => import("./pages/pages/about/AboutTest"));
 const PageNotFoundPage = lazy(() => import("./pages/page-not-found"));
@@ -35,7 +34,6 @@ function App() {
     <Suspense fallback={<LoadingPage/>}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="home-1" element={<HomePage1 />} />
         <Route path="about" element={<AboutTest />} />
         <Route path="contact" element={<ContactPage1 />} />
         

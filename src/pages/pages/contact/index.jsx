@@ -9,6 +9,7 @@ import MetaComponent from "@/components/common/MetaComponent";
 import CustomNavbar from "@/components/headers/CustomNavbar";
 import rightimg from '/assets/imgs/icons/purposeRightImg.png'
 import bottom from '/assets/imgs/bottomContact.png'
+import contact from '/assets/imgs/contactPath.png'
 import './contactUs.css'
 const metadata = {
   title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
@@ -54,10 +55,15 @@ export default function ContactPage1() {
       </main>
        <img src={rightimg} className='leftImg' alt="" />
                     <img src={rightimg} className='rightimg' alt="" />
-                    <img src={bottom} className='bottom' alt="" />
+         
       <div className="Blubg"></div>
-      <div className="LeaveMssg">
-      <div style={{ backgroundColor: '#f3f4f8', padding: '3rem 0',   height: '400px' }}>
+      <div className="LeaveMssg position-relative">
+  <div className="bluBg"></div>
+  <div className="bluBg2"></div>
+  <img src={contact} alt="" className="contact" />
+  <img src={bottom} className='bottom' alt="" />
+      <div style={{ backgroundColor: '#f3f4f8', padding: '5rem 0',    }} className=" d-flex justify-content-center
+      align-items-center ">
       <Container>
         <Row className="justify-content-center align-items-center text-center mb-4">
           <Col md={10} lg={8}>

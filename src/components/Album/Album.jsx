@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom'
 export const Album = () => {
     const data= [ 
         img1,
@@ -23,12 +24,13 @@ export const Album = () => {
         img4,
         img5,
     ]
+    const navigate = useNavigate()
   return (
     <div className='container-fluid '>
                       <  h2 className='teamTitle'>معرض الصور</h2> 
                    
 <div className="swiperParen">
-<  h2 className=' mb-3 teamTitle text-start text-decoration-underline  cursorPointer'>عرض الكل </h2> 
+<  h2 className=' mb-3 teamTitle text-start text-decoration-underline  cursorPointer' onClick={()=>navigate('/team')}>عرض الكل </h2> 
 <Swiper
         slidesPerView={'auto'}
         spaceBetween={30}

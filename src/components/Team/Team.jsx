@@ -5,27 +5,27 @@ import team3 from '../../../public/assets/imgs/team/Untitled-4.png'
 import vission from '../../../public/assets/imgs/icons/vission.png'
 export const Team = () => {
     const data = [
-        {
-            img:team1,
-            name:'وحيد بن أحمد الجساس',
-            title:'الشريك المؤسس و الرئيس التنفيذي',
-            agent:`عضو أساسي زميل في الهيئة السعودية
-            للمقيمين المعتمدين`,
+        {        name:'عبدالمجيد بن حمد العليان',
+            img:team3,
+    
             experience:`18 سنة خبرة في مجال التقييم`,
-            float:false
-        },
-        {
+            title:'الشريك المؤسس و المدير التنفيذي',
+            float:false,
+            agent:`مدرب معتمد و عضو أساسي  في الهيئة 
+            السعودية للمقيمين المعتمدين`
+         },
+         {
+           title:'الشريك المؤسس و الرئيس التنفيذي',
             experience:`25 سنة خبرة في المجال العقاري و 16 سنة في
     مجال التقييم العقاري`,
             img:team2,
-            name:'عبدالمجيد بن حمد العليان',
-            title:'الشريك المؤسس و الكدير التنفيذي',
-agent:`مدرب معتمد و عضو أساسي  في الهيئة 
-السعودية للمقيمين المعتمدين`
-,    float:true
-        },
+            name:'وحيد بن أحمد الجساس',
+            agent:`عضو أساسي زميل في الهيئة السعودية
+            للمقيمين المعتمدين`,
+                float:true
+         },
         {
-            img:team3,
+            img:team1,
             name:' عبدالله بن إبراهيم السكران  ',
             title:' مدير التقييم العقاري  ',
             experience:`10 سنوات خبرة في مجال التقييم  `,
@@ -35,7 +35,7 @@ float:false
         },
     ]
   return (
-    <div className=' teamContainer'>
+    <div className=' teamContainer' id='team'>
         <h2 className='teamTitle'>خبراء فالي</h2>
         <div className="row p-0 gap-5 gap-md-0  DataContainer">
            {data.map((item,index)=>
@@ -45,17 +45,17 @@ float:false
              <img src={item.img} className='profileImg' alt="" />
                 </div>
              <div className="d-flex align-items-center justify-content-center flex-column gap-2 dataContent">
-             <h2 className='AgentName  text-center'>
+             <h2 className='AgentName  CustomFont text-center'>
                 {item.name}
              </h2>
-             <h4 className='AgentTitle  text-center'>
+             <h4 className='AgentTitle CustomFont  text-center'>
                 {item.title}
              </h4>
-             <h6 className='Agentexp  text-center'>
+             <h6 className='Agentexp  CustomFont text-center'>
                 {item.experience}
              </h6>
              </div>
-             <h6 className='Agentexp text-center'>
+             <h6 className='Agentexp CustomFont text-center'>
                 {item.agent}
              </h6>
          </div>

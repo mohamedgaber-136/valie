@@ -10,12 +10,7 @@
     position: absolute;
     z-index: 1;
 }
-.bottom{
-    position: absolute;
-    top: 750px;
-    right: 0;
-    z-index: 1;
-}
+
 .AlbumParent {
     min-height: 100vh;
     display: flex;
@@ -83,4 +78,21 @@ color:#043052;
     left: 30px;
     top:50%;
     transform: translateY(-50%);
+}
+.contact{
+  position: absolute;
+  right: 0;
+  top:50% ;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+img.contact:hover{
+  inset: none !important;
+  transform: none !important;
+}
+.bottom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }

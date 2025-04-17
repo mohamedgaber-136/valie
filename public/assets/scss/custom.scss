@@ -367,3 +367,12 @@ background-color:  #DFEAEF;
 opacity: 0.47;
 
   }
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('/public/assets/fonts/GE-Jarida-Heavy_23.otf') ;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .CustomFont{
+    font-family: 'CustomFont' !important;
+  }

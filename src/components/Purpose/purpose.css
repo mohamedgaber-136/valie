@@ -11,7 +11,7 @@ body{
     
 }
 .MainTitle{
-color:#064B73;
+color:#064B73 !important;
 font-family: 'GE SS Two';
 font-weight: 500;
 font-size: clamp(2.25rem, 5vw + 1rem, 3.3125rem); /* ~36px to 53px */

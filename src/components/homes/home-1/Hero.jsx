@@ -12,7 +12,7 @@ export default function Hero() {
    
    <div className="HeroContent d-flex flex-column px-2 gap-3">
 <img src={logo} className='logoImg' alt="" />
-<div className="MainTitle">
+<div className="MainTitletwo">
 علم و خبرة
 </div>
 <div className="subTitle">
