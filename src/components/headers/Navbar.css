@@ -27,7 +27,7 @@
   }
   
   .navLogo{
-    width: 100px;
+    width: 150px;
     height: auto;
   }
   /* Hamburger button */
@@ -81,6 +81,7 @@
   }
   .linkNav{
     position: relative !important;
+    font-size: 20px;
   }
   .linkNav::before{
     content: '';

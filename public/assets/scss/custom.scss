@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/public/assets/fonts/GE-SS-Text-Medium.otf') ;
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   overflow-x: hidden;
+  font-family: 'CustomFont' !important;
 }
 html {
+  font-family: 'CustomFont' !important;
   scroll-behavior: smooth;
 }
 
@@ -79,7 +88,8 @@ font-weight: 500;
 font-size: 30px;
 line-height: 100%;
 letter-spacing: 0%;
-color: #075981;
+color:  #075981 !important;
+
 
 
 }
@@ -366,13 +376,4 @@ background-color:  #DFEAEF;
 ;
 opacity: 0.47;
 
-  }
-  @font-face {
-    font-family: 'CustomFont';
-    src: url('/public/assets/fonts/GE-Jarida-Heavy_23.otf') ;
-    font-weight: normal;
-    font-style: normal;
-  }
-  .CustomFont{
-    font-family: 'CustomFont' !important;
   }

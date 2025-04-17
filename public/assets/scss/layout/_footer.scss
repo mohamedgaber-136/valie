@@ -1,6 +1,9 @@
 .footer {
   // background-color: $color-primary;
-  background:linear-gradient(rgba(17, 38, 53, 0.927),rgba(6, 47, 76, 0.8)), url(/assets/imgs/slider/Footer.png);
+  background: 
+  linear-gradient(to right, rgba(3, 43, 76, 0.95) , rgba(3, 43, 76, 0.9) ), url(/assets/imgs/slider/Footer.png)
+;  /* fully opaque */
+
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;

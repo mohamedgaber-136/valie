@@ -17,7 +17,7 @@ import { PurposeReverse } from "@/components/Purpose/PurposeRevese";
     description: "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
   };
   return (
- <div className="AlbumParent  position-relative">
+ <div className="AlbumParent position-relative">
     <MetaComponent meta={metadata} />
       <CustomNavbar bg='blueBg' />
 

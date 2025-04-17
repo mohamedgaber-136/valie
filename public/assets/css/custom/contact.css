@@ -15,15 +15,17 @@
     color: #D2AF00;
   }
   
-
+.form-control {
+  border-radius: 5px !important;
+}
   
   .bg-Contact {
     background-color: #043052;
-    border-radius: 25px !important;
+    border-radius: 15px !important;
   }
   
   .bg-transperncy {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(203, 203, 199, 0.521);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -33,7 +35,8 @@
   .newLabel {
     z-index: 99999;
     color: #fff !important;
-    border-radius: 10px !important;
+    border-radius: 5px !important;
+    font-weight: 100 !important;
   }
   
   .textAreaField {
@@ -41,3 +44,15 @@
     height: 100px !important;
   }
   
+  .leftImgContact,.rightImgContact{
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  .leftImgContact{
+    left: 0;
+    
+  }
+  .rightImgContact{
+    right: 0;
+  }

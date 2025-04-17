@@ -4,22 +4,24 @@ import aboutImg from '../../../public/assets/imgs/about/about1.png'
 import { VissionAndMission } from './VissionAndMission'
 export const AboutUs = () => {
   return (
-    <div className='container position-relative d-flex flex-column gap-5 my-50' id="about">
+    <div className='container    position-relative d-flex flex-column gap-5 my-50' id="about">
            <div className="imgAbout"></div>
            <div className="imgAbout2"></div>
-        <div className='my-5'>
-        <h3 className='text-center fw-bold mb-5  wow fadeInUp mainText'>
-    من نحن
-</h3>
-<div className="d-flex justify-content-center my-5  wow fadeInUp ">
+        <div className='my-5 pt-5'>
+ 
+{/* <div className="d-flex justify-content-center my-5  wow fadeInUp ">
    <img src={imgData} alt="" /> 
-</div>
+</div> */}
         </div>
 
 <div className="row align-items-center">
+    <h3 className='text-end mb-5 fw-bold mb-5  wow fadeInUp mainText'>
+    من نحن
+</h3>
     <div className="col-md-6 col-12 d-flex flex-column gap-2">
+      
     <div className="d-flex align-items-center gap-2 mb-2 ">
-        <h3 className='text-center fw-lighter  mainText'>
+  <h3 className='text-start fw-lighter  mainText'>
             عن 
         </h3>
         <img src={goldLogo} alt="" width={'100px'} />
@@ -29,8 +31,10 @@ export const AboutUs = () => {
         </h3>
     <h3 className=' fw-bold  mainColor'>
     ضمانة للحقوق        </h3>
-    <h5 className='p-0 m-0 text-secondary'>
-    تعد عملية التقييم ركيزة أساسية في عمليات تحديد القيمة  للعقار، وهي إحدى أهم الخطوات الضرورية في الكثير من الحالات ذات الصلة باستثمار وإدارة أصول الشركات، وتكمن أهمية التقييم والتثمين العقاري في الحاجة الملحة والضرورية للقطاعات الاقتصادية كالبنوك وشركات الت
+    <h5 className='p-0 m-0 fw-normal text-secondary'>
+    تعد عملية التقييم ميزة أساسية في عمليات تحديد القيمة السوقية للعقار، وهي إحدى أهم الخطوات الضرورية في الكثير من الحالات ذات الصلة باستثمار وإدارة أصول الشركات، وتحمل أهمية التقييم العقاري في الحاجة الملحة والضرورية للقطاعات الاقتصادية كالنزواج وشركات التأمين والشركات العقارية والإجهزة الحكومية المعنية بناءً الملكيات، حيث يسهم التقييم العقاري الدقيق في التعرف على القيمة الحقوقية للأصول والآلالي اتخاذ القرارات المناسبة مثل قرار البيع والتبرام والاستحواذ والاندمان أو تقسيم الشركات والأفراد كنوزيع الزيت وفض المنازعات والتعويضات وتحديد جدوى الاستثمارات وإحداهما. وهنا تلي أهمية التقييم في المساعدة على معرفة الحقوق من خلال تقديم تقارير من شائعاً أن تحدد قيمة العقار وضعه الحالي بدقة.
+
+
     </h5>
     <h6 className=' fw-normal  mainColor'>
         اعرف المزيد .....

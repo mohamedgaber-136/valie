@@ -11,38 +11,31 @@ export default function Footer1() {
   return (
     <footer className="footer">
       <div className="footer-1">
-        <div className="container-sub">
-          <div className="box-footer-top">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-6 text-md-start text-center mb-15 wow fadeInUp">
-                <div className="d-flex align-items-center flex-column flex-md-row justify-content-md-start gap-3 justify-content-center">
-                  <a className="mr-md-30" href="/">
+        <div className="container-sub py-5">
+    
+          <div className="row py-5 ">
+            <div className="col-lg-4 mb-40 col-6 d-flex justify-content-start flex-column align-items-center align-items-md-start">
+            <a className="mr-md-30" href="/">
                     <img src={logoImg} alt="Luxride" width={'150px'} />
                   </a>
-                 
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-6 text-md-end text-center mb-15 wow fadeInUp">
-                <div className="d-flex align-items-center justify-content-md-end justify-content-center">
-                  <span className="text-18-medium color-white mr-10">
-                    تابعنا
-                  </span>
+                  <h2 className="text-secondary fw-normal">
+                    علم و خبره
+                  </h2>
+                  <div className="d-flex align-items-center justify-content-md-end justify-content-center">
+              
                   {socialMediaPlatforms.map((elm, i) => (
                     <a key={i} className={elm.className} href={elm.href}></a>
                   ))}
                 </div>
-              </div>
             </div>
-          </div>
-          <div className="row ">
             <div className="col-lg-4 mb-40 col-6 d-flex justify-content-start flex-column align-items-center align-items-md-start">
               <h5 className="text-18-medium text-gold mb-20 wow fadeInUp">
                 روابط سريعه
               </h5>
               <ul className="menu-footer wow fadeInUp">
                 {links1.map((elm, i) => (
-                  <li key={i} className="text-end text-md-center fw-bolder">
-                    <Link to={elm.href}>{elm.text}</Link>
+                  <li key={i} className="text-start text-md-center fw-bolder">
+                    <Link  className="text-end" to={elm.href}>{elm.text}</Link>
                   </li>
                 ))}
               </ul>
@@ -54,7 +47,7 @@ export default function Footer1() {
               <ul className="menu-footer wow fadeInUp">
                 {links2.map((elm, i) => (
                   <li key={i} className="text-end text-md-center">
-                    <a href={elm.href}>{elm.name}</a>
+                    <a  className="text-end" href={elm.href}>{elm.name}</a>
                   </li>
                 ))}
               </ul>

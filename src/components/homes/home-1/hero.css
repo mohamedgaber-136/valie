@@ -9,7 +9,7 @@
 .subTitle {
     font-weight: 400 !important;
     font-size: clamp(17px, 2vw, 20px) !important;
-    line-height: 100% !important;
+    line-height:35px !important;
     letter-spacing: 0% !important;
     margin-bottom: 10px !important;
     color: white !important;
@@ -40,9 +40,11 @@
     width:30%;
 position: relative !important;
 top: 55%;
+right: 200px;
 }
 @media(max-width:1080px){
     .box-swiper{
+        right: 100px;
         padding-inline: 20px;
         width:80%;
     position: relative !important;
@@ -61,6 +63,8 @@ top: 55%;
     .box-swiper{
         padding-inline: 20px;
         width:100%;
+        right: 20px;
+
     position: relative !important;
     top: 45%;
     }

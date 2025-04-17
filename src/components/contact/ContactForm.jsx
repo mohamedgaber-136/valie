@@ -1,10 +1,9 @@
 import { activeInputFocus } from "@/utlis/activeInputFocus";
 import { useEffect, useState } from "react";
 import '../../../public/assets/css/custom/contact.css'
-
-import PhoneInput from "react-phone-input-2";
+import right from '../../../public/assets/imgs/rightContact.png'
+import left from '../../../public/assets/imgs/leftContact.png'
 export default function ContactForm() {
-    const [phone, setPhone] = useState("+966");
 
   useEffect(() => {
     // Focus event
@@ -12,13 +11,16 @@ export default function ContactForm() {
   }, []);
   return (
     <section className="section px-2 my-5 flex jusity-center  " >
-      <div className="container-sub bg-Contact  rounded-25  p-4 p-md-5 rounded">
+      <div className="container-sub bg-Contact  position-relative rounded-25  p-4 p-md-5 rounded">
+      <img src={left} alt=""  className="leftImgContact"/>
+      <img src={right} alt="" className="rightImgContact" />
         <div className="">
-          <h3 className="mb-10 text-center text-white fw-bold wow fadeInUp">
+          <h3 className="mb-10 text-center  text-white fw-bold wow fadeInUp">
 تواصل معنا الان          </h3>
-          <div className="row gap-2 justify-content-center align-items-start">
+          <div className="row gap-2  justify-content-center align-items-start">
 
-          <div style={{zIndex:2}} className="form-contact  wow fadeInUp col-12 p-md-4  col-md-6 form-comment wow rounded-5 rounded p-2 fadeInUp">
+          <div style={{zIndex:2}} className="form-contact position-relative  wow fadeInUp col-12 p-md-4  col-md-6 form-comment wow rounded-5 rounded p-2 fadeInUp">
+          
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="row">
                 <div className="col-lg-6 col-md-6">
@@ -51,16 +53,15 @@ export default function ContactForm() {
                 </div>
                 <div className="col-lg-6 col-md-6">
                 <div className="form-group">
-                      <PhoneInput
-                        country={"sa"}
-                        value={phone}
-                        onChange={(phone) => {
-                          setPhone(phone);
-                        }}
-                        inputClass="form-control bg-transperncy  w-100 border-0"
-                        placeholder="التليفون"
-                        isValid={false}
-                      />
+                <label className="form-label newLabel fw-light" htmlFor="phone">
+                       التليفون
+                    </label>
+                    <input
+                      className="form-control bg-transperncy border-0"
+                      id="phone "
+                      type="text"
+                      placeholder=""
+                    />
                      
                     </div>
                 </div>

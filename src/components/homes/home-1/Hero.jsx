@@ -10,7 +10,7 @@ export default function Hero() {
         <img src={Icon1} alt="" className="iconImageONE" />
         <img src={Icon2} alt=""  className="iconImageONE"/>
    
-   <div className="HeroContent d-flex flex-column px-2 gap-3">
+   <div className="HeroContent   d-flex flex-column px-2 gap-3">
 <img src={logo} className='logoImg' alt="" />
 <div className="MainTitletwo">
 علم و خبرة
