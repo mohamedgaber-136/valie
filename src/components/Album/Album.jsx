@@ -12,7 +12,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-
+import './Album.css'
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom'
@@ -34,9 +34,7 @@ export const Album = () => {
 <Swiper
         slidesPerView={'auto'}
         spaceBetween={50}
-        // freeMode={true}
-        // loop={true}
-        // autoplay={true}
+      
         loop={false} // true if you want infinite loop
 
         pagination={{
@@ -46,7 +44,7 @@ export const Album = () => {
         className="mySwiper  wow fadeInUp"
       >
         {data.map((img, index) => (
-          <SwiperSlide key={index} className='sliderContainer' style={{backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}>
+          <SwiperSlide key={index} className='sliderTest' style={{backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}>
            
           </SwiperSlide>
         ))}

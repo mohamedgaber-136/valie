@@ -9,7 +9,7 @@
 .subTitle {
     font-weight: 400 !important;
     font-size: clamp(17px, 2vw, 20px) !important;
-    line-height:35px !important;
+    line-height: 35px !important;
     letter-spacing: 0% !important;
     margin-bottom: 10px !important;
     color: white !important;
@@ -23,11 +23,13 @@
     z-index: 99999 !important;
     right: 0% !important;
 }
-.logoImg{
+
+.logoImg {
     width: 100px;
 }
-.banner-home1{
-    width:100vw ;
+
+.banner-home1 {
+    width: 100vw;
     height: 100vh;
     background-image: url(../../../../public/assets/imgs/BG.png);
     background-size: cover;
@@ -35,37 +37,60 @@
     background-repeat: no-repeat;
     position: relative;
 }
-.box-swiper{
+
+.box-swiper {
     padding-inline: 20px;
-    width:30%;
-position: relative !important;
-top: 55%;
-right: 200px;
+    width: 30%;
+    position: relative !important;
+    top: 55%;
+    right: 200px;
 }
-@media(max-width:1080px){
-    .box-swiper{
+
+.box-swiper.ltr {
+    right: auto;
+    left: 200px;
+}
+
+@media(max-width:1080px) {
+    .box-swiper.ltr {
+        left: 100px;
+        right: auto;
+    }
+}
+
+@media(max-width:768px) {
+    .box-swiper.ltr {
+        left: 20px;
+        right: auto;
+    }
+}
+
+@media(max-width:1080px) {
+    .box-swiper {
         right: 100px;
         padding-inline: 20px;
-        width:80%;
-    position: relative !important;
-    top: 45%;
+        width: 80%;
+        position: relative !important;
+        top: 45%;
     }
 }
-@media(max-width:992px){
-    .box-swiper{
+
+@media(max-width:992px) {
+    .box-swiper {
         padding-inline: 20px;
-        width:80%;
-    position: relative !important;
-    top: 45%;
+        width: 80%;
+        position: relative !important;
+        top: 45%;
     }
 }
-@media(max-width:768px){
-    .box-swiper{
+
+@media(max-width:768px) {
+    .box-swiper {
         padding-inline: 20px;
-        width:100%;
+        width: 100%;
         right: 20px;
 
-    position: relative !important;
-    top: 45%;
+        position: relative !important;
+        top: 45%;
     }
 }

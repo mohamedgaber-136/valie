@@ -1,115 +1,94 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import MetaComponent from '@/components/common/MetaComponent';
 import CustomNavbar from '@/components/headers/CustomNavbar';
 import Footer1 from '@/components/footers/Footer1';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
-// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
 
 import './albumPage.css';
-import rightimg from '/assets/imgs/icons/purposeRightImg.png'
 
-// Import your images
 import img1 from '/assets/imgs/team/img1.png';
 import img2 from '/assets/imgs/team/Image2.png';
 import img3 from '/assets/imgs/team/Image3.png';
 import img4 from '/assets/imgs/team/img4.png';
 import img5 from '/assets/imgs/team/img5.png';
 import img6 from '/assets/imgs/shapeOne.png';
+import rightimg from '/assets/imgs/icons/purposeRightImg.png';
 
 const AlbumPage = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const [mainSwiper, setMainSwiper] = useState(null);
-
   const data = [img1, img2, img3, img4, img5];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef(null); // 🔁 Swiper instance
+
   const metadata = {
     title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
     description: "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
   };
 
-  useEffect(() => {
-    return () => {
-      // Cleanup Swiper instances when component unmounts
-      if (mainSwiper) {
-        mainSwiper.destroy();
-      }
-      if (thumbsSwiper) {
-        thumbsSwiper.destroy();
-      }
-    };
-  }, [mainSwiper, thumbsSwiper]);
+  const handleThumbnailClick = (index) => {
+    setActiveIndex(index);
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(index); // 🎯 Go to selected slide
+    }
+  };
 
   return (
     <div className="AlbumParent position-relative">
       <MetaComponent meta={metadata} />
-      <CustomNavbar bg='blueBg' />
+      <CustomNavbar dark={true} />
 
       <main className="albumContainer">
-        {/* Main Swiper */}
-        <h4 className="teamTitle"> معرض صورنا </h4>
+        <h4 className="teamTitle">معرض صورنا</h4>
+        <div className="Blubg" />
 
-        <div className="Blubg"></div>
+        {/* Main Swiper */}
         <Swiper
-          onSwiper={setMainSwiper}
-          loop={true}
-          spaceBetween={10}
           navigation={true}
-          thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-          modules={[FreeMode, Navigation, Thumbs]}
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          modules={[Navigation]}
           className="mainSwiper"
+          onSwiper={(swiper) => (swiperRef.current = swiper)} // 🔌 Save swiper instance
         >
           {data.map((src, idx) => (
-            <SwiperSlide key={idx} className='mainSwiperSlide'>
-              <div 
+            <SwiperSlide key={idx} className="mainSwiperSlide">
+              <div
                 className="mainImage"
                 style={{
-                  backgroundImage: `url(${src})`, 
-                  backgroundSize: 'cover', 
-                  backgroundPosition: 'center'
+                  backgroundImage: `url(${src})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               />
             </SwiperSlide>
           ))}
         </Swiper>
-        <h5 className="teamTitle">
-            معرض الصور ({data.length} صورة)
-          </h5>
-        {/* Thumbnail Swiper */}
-        <Swiper
-          onSwiper={setThumbsSwiper}
-          loop={true}
-          spaceBetween={10}
-          slidesPerView={4}
-          freeMode={true}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className="thumbnailSwiper"
-        >
+
+        <h5 className="teamTitle">معرض الصور ({data.length} صورة)</h5>
+
+        {/* Native Thumbnail List */}
+        <div className="nativeThumbnails">
           {data.map((src, idx) => (
-            <SwiperSlide key={idx} className="thumbnailSlide">
-              <div 
-                className="thumbnailImage"
-                style={{
-                  backgroundImage: `url(${src})`, 
-                  backgroundSize: 'cover', 
-                  backgroundPosition: 'center'
-                }}
-              />
-            </SwiperSlide>
+            <div
+              key={idx}
+              className={`thumbImage ${activeIndex === idx ? 'active' : ''}`}
+              style={{
+                backgroundImage: `url(${src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+              onClick={() => handleThumbnailClick(idx)}
+            />
           ))}
-        </Swiper>
+        </div>
       </main>
 
-<img src={img6} className='topArrow' alt="" />
+      <img src={img6} className="topArrow" alt="" />
       <Footer1 />
-              <img src={rightimg} className='leftImg' alt="" />
-              <img src={rightimg} className='rightimg' alt="" />
-      
+      <img src={rightimg} className="leftImg" alt="" />
+      <img src={rightimg} className="rightimg" alt="" />
     </div>
   );
 };

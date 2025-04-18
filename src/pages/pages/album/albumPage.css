@@ -1,146 +1,191 @@
 /* Main container styles */
 .AlbumParent {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  
-  .albumContainer {
-    flex: 1;
-    width: 100%;
-    padding-block:200px ;
-padding-inline: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Main Swiper styles */
-  .mainSwiper {
-    width: 100%;
-    height: 600px;
-    margin: 20px 0;
-    border-radius: 20px;
-    margin-bottom: 100px;
-  }
-  @media (max-width:768px) {
-    .mainSwiper{
-        height: 200px !important;
-        margin-bottom: 20px;
-    }
-    .thumbnailSwiper{
-        margin-block: 20px !important;
-    }
-  }
-  .mainSwiperSlide {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .mainImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-  }
-  
-  /* Thumbnail Swiper styles */
-  .thumbnailSwiper {
-    width: 100%;
-    height: 120px;
-    margin-block: 120px;
-  }
-  
-  .thumbnailSlide {
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-    cursor: pointer;
-    height: 100%;
-  }
-  
-  .thumbnailSlide.swiper-slide-thumb-active {
-    opacity: 1;
-    border: 2px solid black;
-    transition: 0.2s;
-    border-radius: 20px;
-    overflow: hidden;
-
-  }
-  
-  .thumbnailImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-  }
-  
-  /* Navigation buttons */
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 20px;
-  }
-  
-  /* Responsive adjustments */
-
-  .Blubg{
-    position: absolute;
-    width: 1200px;
-    height: 550px !important;
-    top: 200px !important;
-    left: -20% !important;
-    background-color: #124264;
-  }
-  .teamTitle{
-    color:  #075981;
-    font-family: 'GE SS Two';
-font-weight: 700;
-font-size: clamp(1.5rem, 2vw + 1rem, 30px);
-line-height: 100%;
-letter-spacing: 0%;
-
-  }
-  .topArrow{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 250px;
-    height: 150px;
-    object-fit: contain;
-    transform: translateX(-50%);
-  } 
-   @media (max-width: 768px) {
-    .mainSwiper {
-      height: 400px;
-    }
-    
-    .thumbnailSwiper {
-      height: 80px;
-    }
-     .Blubg{
-height: 100px !important;
-top: 16% !important;
-    }
-    .thumbnailSwiper,.thumbnailSlide,.thumbnailImage{
-        height: 100px !important;
-    }
-  }
-  .thumbnailSwiper,.thumbnailSlide,.thumbnailImage{
-    height: 250px !important;
-  }
-  .leftImg{
-    right: 5%;
-    top: 0;
-    position: absolute;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
-.rightimg{
-    left: 5%;
-    top: 0;
-    position: absolute;
+
+.albumContainer {
+  flex: 1;
+  width: 100%;
+  padding-block: 200px;
+  padding-inline: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main Swiper styles */
+.mainSwiper {
+  width: 100%;
+  height: 600px;
+  margin: 20px 0;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+@media (max-width:768px) {
+  .mainSwiper {
+    height: 200px !important;
+    margin-bottom: 20px;
+  }
+
+  .thumbnailSwiper {
+    margin-block: 20px !important;
+  }
+}
+
+.mainSwiperSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* Thumbnail Swiper styles */
+.thumbnailSwiper {
+  width: 100%;
+  height: 120px;
+  margin-block: 120px;
+}
+
+.thumbnailSlide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+.thumbnailSlide.swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid black;
+  transition: 0.2s;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+/* Responsive adjustments */
+
+.Blubg {
+  position: absolute;
+  width: 1200px;
+  height: 550px !important;
+  top: 200px !important;
+  left: -20% !important;
+  background-color: #124264;
+}
+
+.teamTitle {
+  color: #075981;
+  font-family: 'GE SS Two';
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2vw + 1rem, 30px);
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.topArrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .thumbImage {
+    width: 150px !important;
+    height: 100px !important;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.3s ease;
+    border-radius: 6px;
+  }
+
+  .mainSwiper {
+    height: 400px;
+  }
+
+  .thumbnailSwiper {
+    height: 80px;
+  }
+
+  .Blubg {
+    height: 100px !important;
+    top: 16% !important;
+  }
+
+  .thumbnailSwiper,
+  .thumbnailSlide,
+  .thumbnailImage {
+    height: 100px !important;
+  }
+}
+
+.thumbnailSwiper,
+.thumbnailSlide,
+.thumbnailImage {
+  height: 250px !important;
+}
+
+.leftImg {
+  right: 5%;
+  top: 0;
+  position: absolute;
+}
+
+.rightimg {
+  left: 5%;
+  top: 0;
+  position: absolute;
+}
+
+.nativeThumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.thumbImage {
+  width: 350px;
+  height: 300px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border 0.3s ease;
+  border-radius: 6px;
+}
+
+.thumbImage.active {
+  border-color: rgb(0, 0, 0);
 }

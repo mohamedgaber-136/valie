@@ -6,6 +6,7 @@ import Hero from "@/components/homes/home-1/Hero";
 
 import MetaComponent from "@/components/common/MetaComponent";
 
+import rightimg from '../../public/assets/imgs/icons/purposeRightImg.png';
 
 import ContactForm from "@/components/contact/ContactForm";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
@@ -32,6 +33,8 @@ export default function Home() {
         <Hero />
         <AboutUs/>
         <Facts />
+        <div className="position-relative">
+<img src={rightimg} className="rightimgPurpose" alt=""  />
         <Purpose
   title="الغرض من عملية "
   subtitle="  التقييم العقاري"
@@ -48,6 +51,7 @@ export default function Home() {
   ]}
   image={purposeImgX} // استبدل purposeImgX بصورة القسم
 />
+  </div>
     <Team/>
     <Partners/>
     <Album/>

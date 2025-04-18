@@ -15,13 +15,13 @@ export default function Footer1() {
     
           <div className="row py-5 ">
             <div className="col-lg-4 mb-40 col-6 d-flex justify-content-start flex-column align-items-center align-items-md-start">
-            <a className="mr-md-30" href="/">
+            <a className="mr-md-30 " href="/">
                     <img src={logoImg} alt="Luxride" width={'150px'} />
                   </a>
-                  <h2 className="text-secondary fw-normal">
+                  <h2 className="footerText mt-2">
                     علم و خبره
                   </h2>
-                  <div className="d-flex align-items-center justify-content-md-end justify-content-center">
+                  <div className="d-flex  mt-2 align-items-center justify-content-md-end justify-content-center">
               
                   {socialMediaPlatforms.map((elm, i) => (
                     <a key={i} className={elm.className} href={elm.href}></a>

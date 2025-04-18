@@ -1,99 +1,155 @@
 .custom-navbar {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    z-index: 99999999999;
-    padding: 10px 50px 
-    ;
-    transition: 0.2s;
-  }
-  .blueBg{
-    background-color: #124264 !important;
-  }
-  @media(max-width:768px){
-  .custom-navbar{
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 99999999999;
+  padding: 10px 50px;
+  transition: 0.2s;
+}
+
+.blueBg {
+  background-color: #ffffff !important;
+}
+
+@media(max-width:768px) {
+  .custom-navbar {
     padding: 5px 5px;
     border-radius: 10x;
   }
-    .scrolledCustom{
-        padding: 5px 20px;
-        top: 20px;
-        width: 85%;
-        right: 6%;
-        border-radius: 20px;
-    }
+
+  .scrolledCustom {
+    padding: 5px 20px;
+    top: 20px;
+    width: 85%;
+    right: 6%;
+    border-radius: 20px;
   }
-  .custom-navbar.scrolled {
-    background-color: #124264 !important;
-  }
-  
-  .navLogo{
-    width: 150px;
-    height: auto;
-  }
-  /* Hamburger button */
+}
+
+.custom-navbar.scrolled {
+  background-color: #ffffff !important;
+}
+
+.navLogo {
+  width: 150px;
+  height: auto;
+}
+
+/* Hamburger button */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 10001;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile only */
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
   }
-  
-  .hamburger span {
-    height: 3px;
-    width: 100%;
-    background: white;
-    border-radius: 5px;
-    transition: 0.4s;
+
+  .navbar-collapse {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
   }
-  
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+
+  .navbar-collapse.show {
+    display: block !important;
   }
-  
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-  
-  /* Mobile only */
-  @media (max-width: 991px) {
-    .hamburger {
-      display: flex;
-    }
-  
-    .navbar-collapse {
-      background-color: #124264;
-      padding: 1rem;
-      border-radius: 0 0 10px 10px;
-    }
-  
-    .navbar-collapse.show {
-      display: block !important;
-    }
-  }
-  .linkNav{
-    position: relative !important;
-    font-size: 20px;
-  }
-  .linkNav::before{
-    content: '';
-    position: absolute!important;
-    bottom: -2px !important;
-    background-color: white !important;
-    width: 0% !important;
-    left: 10px !important;
-    height: 2px;
-    z-index: 99999;
-    transition: 0.2s !important;
-  }
-  .linkNav:hover::before{
-    width: 80% !important;
-  }
+}
+
+.linkNav {
+  position: relative !important;
+  font-size: 18px;
+}
+
+.linkNav::before {
+  content: '';
+  position: absolute !important;
+  bottom: -2px !important;
+  background-color: white !important;
+  width: 0% !important;
+  left: 10px !important;
+  height: 2px;
+  z-index: 99999;
+  transition: 0.2s !important;
+}
+
+.linkNav:hover::before {
+  width: 80% !important;
+}
+
+.linknavDark {
+  position: relative !important;
+  font-size: 18px;
+}
+
+.linknavDark::before {
+  content: '';
+  position: absolute !important;
+  bottom: -2px !important;
+  background-color: rgb(0, 0, 0) !important;
+  width: 0% !important;
+  left: 10px !important;
+  height: 2px;
+  z-index: 99999;
+  transition: 0.2s !important;
+}
+
+.linknavDark:hover::before {
+  width: 80% !important;
+}
+
+.custom-navbar.scrolled {
+  background-color: white !important;
+}
+
+.switchBtn {
+  background-color: transparent !important;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  color: white !important;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchBtnDark {
+  background-color: transparent !important;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  color: rgb(0, 0, 0) !important;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

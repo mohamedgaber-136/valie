@@ -1,11 +1,11 @@
 
-
+import img from '../../../../public/assets/imgs/icons/purposeRightImg.png'
 export default function Facts() {
  
   return (
-    <section className="section  position-relative mb-30  mt-80 " >
+    <section className="section  position-relative mb-30   " >
       <div className="bgItem"></div>
-
+<img src={img} className='banerLeftimg' alt="" />
       <div className="bg-showcase">
         <div className="container-sub ">
           <div className="row align-items-center">

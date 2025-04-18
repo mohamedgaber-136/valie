@@ -1,0 +1,20 @@
+.missioinAndVissionImg {
+    position: absolute !important;
+    right: -250px;
+    top: -100px;
+}
+
+.leftMission,
+.rightMission {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.leftMission {
+    left: -200px;
+}
+
+.rightMission {
+    right: -200px;
+}

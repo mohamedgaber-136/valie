@@ -5,12 +5,16 @@ import img1 from '../../../../public/assets/imgs/1.png'
 import img2 from '../../../../public/assets/imgs/2.png'
 import img3 from '../../../../public/assets/imgs/3.png'
 import img4 from '../../../../public/assets/imgs/4.png'
+import bottom from '../../../../public/assets/imgs/bottomContact.png'
+import contact from '../../../../public/assets/imgs/contactPath.png'
 import './aboutStyle.css'
 import "react-lazy-load-image-component/src/effects/blur.css";
 import CustomNavbar from "@/components/headers/CustomNavbar";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
 import { Purpose } from "@/components/Purpose/Purpose";
 import { PurposeReverse } from "@/components/Purpose/PurposeRevese";
+import './aboutStyle.css'
+
  const AboutTest = () => {
   const metadata = {
     title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
@@ -19,117 +23,119 @@ import { PurposeReverse } from "@/components/Purpose/PurposeRevese";
   return (
  <div className="AlbumParent position-relative">
     <MetaComponent meta={metadata} />
-      <CustomNavbar bg='blueBg' />
+      <CustomNavbar dark={true}/>
 
       <main >
- <AboutUs/>
+ <AboutUs right={true}/>
  <div className="bgItem"></div>
- <Purpose
-  title="أولاً"
-  subtitle="فريق العمل"
+ <h2 className="text-center text-votes">خطوات التقييم</h2>
+
+  <Purpose
+  title="ما هي عملية"
+  subtitle=" التقييم العقاري"
   data={[
-    "في شركة فالي للتقييم العقاري نعمل وفقًا لأسس واضحة ومحكمة لضمان أعلى دقة في عمليات التقييم.",
-    "يبدأ تقييمكم بفهم متكامل لكل مشروع أو عميل حتى نتمكن من تلبية متطلباته باحترافية عالية."
-  ]}
+` هي عمليه  تحديد قيم الاصول العقاريه او المنشأت الاقتصاديه علي اختلاف انواعها الاستفاده منها لغرض و وقت محدد و القيمه السوقيه وفقا للمعايير الدوليه للتفييم هي القيمه المقدره التي يتم تبادل الاصول علي اساسها وقت التقييم بين البائع والمشتري وفق لشروط مناسبه ضمن الصفقات التجاريه التي تعتمد علي الايجاب والقبول بين الطرفيين بعد عمليات التسويق المناسبه بحيث يكون كلا الطرفين علي علم ودرايه تامه بحقوقه والتزاماته
+`  ]}
   image={img1}
 />
 
-<PurposeReverse
-  title="ثانيًا"
-  subtitle="إجراءات التقييم"
+<Purpose
+  title="أولا"
+  subtitle="فريق العمل "
   data={[
-    "مراجعة العقار واستلام المستندات المطلوبة من المالك أو وكيله",
-    "التحقق الكامل للمعلومات عن العقار ورصد المدخلات",
-    "إعداد صور للعقار داخليًا وخارجيًا",
-    "إجراء مسح ميداني للمنطقة التي يقع فيها العقار",
-    "تحليل السوق العقاري وتحليل الصفقات المماثلة",
-    "إعداد التقرير المبدئي ومشاركته مع العميل للمراجعة",
-    "إرسال نسخة من التقرير النهائي بعد التأكد من صحة الإجراءات"
+   "في شركة فالي للتقييم العقاري نعمل وفق أسس واضحة ومحددة لضمان أعلى دقة في عمليات التقييم، لذلك نقوم بتكوين فريق عمل متكامل لكل مشروع أو عميل على حده حتى يكون هناك فهم دقيق لمتطلبات واحتياجات العميل وأهدافه من عملية التقييم."
   ]}
   image={img2}
 />
 
-<Purpose
-  title="ثالثًا"
-  subtitle="إعداد التقرير"
+<PurposeReverse
+  title="ثانيا"
+  subtitle="إجراءات التقييم"
   data={[
-    "يقوم الفريق بإعداد التقرير بشكل مفصل شاملاً:",
-    "بيانات التعريف التفصيلية",
-    "موقع العقار ووصفه",
-    "صور جوية وموضوعية",
-    "تحليل طريقة الوصول للقيمة السوقية",
-    "مقارنات ومؤشرات حسابية"
+    "معاينة العقار واستلام المستندات المطلوبة من المالك أو وكيله",
+    "تسجيل كافة المعلمات عن العقار ورصد الملاحظات",
+    "التقاط صور للعقار بالداخل والخارج لتوضيح العقار بشكل عام",
+    "إجراء مسح ميداني للمنطقة التي يقع بها العقار",
+    "إعداد تقرير مبدئي عن العقار من المؤمن (أحد أفراد الفريق)",
+    "تحليل أسعار العقارات المشابهة ودراسة منطقة العقار بالكامل",
+    "إعداد التقرير اللازم تمهيداً لإصدار التقرير النهائي بعد تحليل كافة المعلمات",
+    "إرسال نسخة من التقرير للعميل عن طريق البريد الإلكتروني",
+    "طباعة التقرير النهائي من نسختين (للعميل وللأرشيف)",
+    "إرسال نسخة من التقرير لإدارة الجودة بالشركة للتأكد من اتباع الإجراءات الصحيحة"
   ]}
   image={img3}
 />
 
-<PurposeReverse
-  title="رابعًا"
-  subtitle="الغرض من عملية التقييم"
+<Purpose
+  title="ثالثا"
+  subtitle="إعداد التقرير"
   data={[
-    'تحديد القيمة السوقية للعقار',
-    'تحديد القيمة الإيجارية للعقار',
-    'قياس القيمة العادلة بتطبيق معايير مجلس المحاسبة الدولية',
-    'تقييم الصناديق العقارية حسب متطلبات هيئة السوق المالية',
-    'التقييم لغرض حساب نسبة الزكاة الشرعية السنوية',
-    'التقييم لغرض توزيع الأملاك والإرث',
-    'تحديد أفضل استخدام للعقار'
+    "يقوم الفريق بإعداد التقرير بشكل مفصل متضمناً:",
+    "بيانات العقار التفصيلية",
+    "نطاق العمل",
+    "وصف العقار وموقعه",
+    "صور جوية لموقع العقار",
+    "مزايا وعيوب العقار",
+    "العقارات المقارنة",
+    "تحليل طريقة الوصول للقيمة السوقية النهائية باستخدام طرق التقييم المعتمدة (مثل طريقة الدخل، المقارنات، وحساب عائد الدخل... إلخ)"
   ]}
   image={img4}
-/>
+/> 
  <div className="LeaveMssg position-relative">
   <div className="bluBg"></div>
   <div className="bluBg2"></div>
-      <div style={{ backgroundColor: '#f3f4f8', padding: '5rem 0',    }} className=" d-flex justify-content-center
-      align-items-center my-5">
-      <Container>
-        <Row className="justify-content-center align-items-center text-center mb-4">
-          <Col md={10} lg={8}>
-            <h5 style={{
-              fontFamily: 'Tajawal',
-              fontWeight: 700,
-              fontSize: 'clamp(1rem, 1.5vw + 0.3rem, 25px)',
-              color: '#0a2c52'
-            }}>
-              اترك بريدك الالكتروني ليصلك منا كل جديد
-            </h5>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col md={10} lg={6}>
-            <Form>
-              <InputGroup className="position-relative">
-            
-                <Form.Control
-                  type="email"
-                  placeholder="اكتب بريدك الالكتروني"
-                  style={{
-                    fontFamily: 'Tajawal',
-                    textAlign: 'right',
-                    borderTopRightRadius: '8px',
-                    borderBottomRightRadius: '8px',
-                    borderLeft: 'none',
-                    paddingRight: '1rem'
-                  }}
-                  className="border p-2"
-                />
-
-                <div className="floatBtnContact py-1">     <Button  variant="dark" style={{
-                  fontFamily: 'Tajawal',
-                 borderRadius:'10px',
-                  padding: '0.6rem 1.5rem',
-                  backgroundColor: '#032E4F'
-
-                }}>
-                  إرسال
-                </Button></div>
-               
-              </InputGroup>
-            </Form>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+   <div style={{ backgroundColor: '#f3f4f8', padding: '6rem 0',    }} className="position-relative d-flex justify-content-center
+       align-items-center ">
+          <img src={contact} alt="" className="contact" />
+          <img src={bottom} className='bottom' alt="" />
+       <Container className="">
+         <Row className="justify-content-center  align-items-center text-center mb-4">
+           <Col md={10} lg={8}>
+             <h5 style={{
+               fontFamily: 'Tajawal',
+               fontWeight: 700,
+               fontSize: 'clamp(1rem, 1.5vw + 0.3rem, 25px)',
+               color: '#0a2c52'
+             }}>
+               اترك بريدك الالكتروني ليصلك منا كل جديد
+             </h5>
+           </Col>
+         </Row>
+         <Row className="justify-content-center">
+           <Col md={10} lg={6}>
+             <Form>
+               <InputGroup className="position-relative">
+             
+                 <Form.Control
+                   type="email"
+                   placeholder="اكتب بريدك الالكتروني"
+                   style={{
+                     fontFamily: 'Tajawal',
+                     textAlign: 'right',
+                     borderTopRightRadius: '8px',
+                     borderBottomRightRadius: '8px',
+                     borderLeft: 'none',
+                     paddingRight: '1rem'
+                   }}
+                   className="border p-2"
+                 />
+ 
+                 <div className="floatBtnContact py-1">     <Button  variant="dark" style={{
+                   fontFamily: 'Tajawal',
+                  borderRadius:'10px',
+                   padding: '0.6rem 1.5rem',
+                   backgroundColor: '#032E4F'
+ 
+                 }}>
+                   إرسال
+                 </Button></div>
+                
+               </InputGroup>
+             </Form>
+           </Col>
+         </Row>
+       </Container>
+     </div>
       </div>
       </main>
  

@@ -1,98 +1,120 @@
-.leftImg{
-    right: 5%;
-    top: 0;
-    position: absolute;
-    z-index: 1;
+.leftImg {
+  right: 5%;
+  top: 0;
+  position: absolute;
+  z-index: 1;
 }
-.rightimg{
-    left: 5%;
-    top: 30%;
-    position: absolute;
-    z-index: 1;
+
+.rightimg {
+  left: 5%;
+  top: 30%;
+  position: absolute;
+  z-index: 1;
 }
 
 .AlbumParent {
-    min-height: 100vh;
-    display: flex;
-    z-index: 2;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  .FormParent{
-    margin-block: 200px;
-  }
-  .Blubg{
-    position: absolute;
-    width: 1200px;
-    z-index: -1;
-    height: 450px !important;
-    top: 120px !important;
-    left: -20% !important;
-    background-color: #124264;
-  }
-  @media (max-width: 768px) {
+  min-height: 100vh;
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  overflow-x: hidden;
+}
 
-     .Blubg{
-height: 100px !important;
-top: 16% !important;
-    }
-   
-  }
-  .teamTitle{
-    color:  #075981;
-    font-family: 'GE SS Two';
-font-weight: 700;
-padding-right: 100px;
-font-size: clamp(1.5rem, 2vw + 1rem, 30px);
-line-height: 100%;
-letter-spacing: 0%;
+.FormParent {
+  margin-block: 200px;
+}
 
-  }
-  .contact-title{
-    font-family: 'Tajawal';
-font-weight: 700;
-font-size: clamp(1.2rem, 2vw + 0.5rem, 25px);
-line-height: 100%;
-letter-spacing: 0%;
-color:#043052;
-  }
-  .goldIcon{
-    color:#D2AF00 ;
-    font-size: 32px;
-  }
-.contact-content{
-    color:#828282;
-    font-family: 'Tajawal';
-    font-weight: 400;
-    font-size: clamp(1rem, 1.5vw + 0.3rem, 20px);
-    line-height: 100%;
-    letter-spacing: 0%;
-    
+.Blubg {
+  position: absolute;
+  width: 1200px;
+  z-index: -1;
+  height: 450px !important;
+  top: 120px !important;
+  left: -20% !important;
+  background-color: #124264;
 }
-.LeaveMssg{
-    /* background-color:  #F1F1F6    ; */
-    height: 400px;
+
+@media (max-width: 768px) {
+
+  .Blubg {
+    height: 100px !important;
+    top: 16% !important;
+  }
+
 }
-.floatBtnContact{
-    position: absolute;
-    left: 30px;
-    top:50%;
-    transform: translateY(-50%);
+
+.teamTitle {
+  color: #075981;
+  font-family: 'GE SS Two';
+  font-weight: 700;
+  padding-right: 100px;
+  font-size: clamp(1.5rem, 2vw + 1rem, 30px);
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
-.contact{
+
+.contact-title {
+  font-family: 'Tajawal';
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2vw + 0.5rem, 25px);
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #043052;
+}
+
+.goldIcon {
+  color: #D2AF00;
+  font-size: 32px;
+}
+
+.contact-content {
+  color: #828282;
+  font-family: 'Tajawal';
+  font-weight: 400;
+  font-size: clamp(1rem, 1.5vw + 0.3rem, 20px);
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.LeaveMssg {
+  /* background-color:  #F1F1F6    ; */
+  height: 400px;
+}
+
+.floatBtnContact {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact {
   position: absolute;
   right: 0;
-  top:50% ;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 99;
 }
-img.contact:hover{
-  inset: none !important;
-  transform: none !important;
-}
-.bottom{
+
+.bottom {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+img.contact:hover {
+  inset: none !important;
+  transform: none !important;
+}
+
+
+.contactCard {
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px rgb(237, 236, 236);
+  height: 300px;
+  z-index: 99;
+  background-color: white !important;
 }

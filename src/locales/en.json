@@ -1,0 +1,23 @@
+{
+  "home": "Home",
+  "about": "About Us",
+  "services": "Services",
+  "team": "Our Team",
+  "clients": "Clients",
+  "contact": "Contact Us",
+  "language": "عربي",
+
+  "hero": {
+    "mainTitle": "Science & Expertise",
+    "subTitle": "The appraisal process is a fundamental step in determining the market value of a property. It is one of the most important steps in many cases related to investment and asset management for companies. The importance of real estate valuation lies in the urgent need for it in economic sectors such as banks and others."
+  },
+
+  "aboutSection": {
+    "title": "About Us",
+    "about": "About",
+    "line1": "Accurate Evaluation .......",
+    "line2": "Guarantees Rights",
+    "description": "The evaluation process is a fundamental step in determining the market value of real estate. It plays a crucial role in various scenarios related to the investment and management of corporate assets. Real estate evaluation is vital for many sectors such as legal disputes, insurance companies, real estate firms, and governmental entities responsible for property regulations. Accurate property valuation helps identify the legal value of assets and supports informed decision-making like selling, donating, acquiring, merging, dividing companies, distributing inheritance, resolving disputes, compensations, and evaluating investment feasibility. Thus, its importance lies in providing accurate and comprehensive reports that clearly define the current value and status of a property.",
+    "readMore": "Learn more ....."
+  }
+}

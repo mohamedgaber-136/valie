@@ -1,70 +1,105 @@
+/* =================== FONT =================== */
 @font-face {
   font-family: 'CustomFont';
-  src: url('/public/assets/fonts/GE-SS-Text-Medium.otf') ;
+  src: url('/public/assets/fonts/GE-SS-Text-Medium.otf');
   font-weight: normal;
   font-style: normal;
 }
 
-body{
-  overflow-x: hidden;
-  font-family: 'CustomFont' !important;
-}
-html {
+html, body {
   font-family: 'CustomFont' !important;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.list-how.slider-nav-thumbnails .slick-list .slick-track .slick-current li h4,
-.list-how.slider-nav-thumbnails .slick-list .slick-track .slick-current li p {
-  opacity: 1;
-}
-.list-how.slider-nav-thumbnails
-  .slick-list
-  .slick-track
-  .slick-current
-  li
-  .line-white {
-  display: block;
-}
-.list-how.slider-nav-thumbnails
-  .slick-list
-  .slick-track
-  .slick-active:last-child
-  li
-  .line-white {
-  display: none;
+/* =================== TEXT COLORS =================== */
+.mainText {
+  font-family: 'GE SS Two';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  color: #075981 !important;
 }
 
-.list-how.slider-nav-thumbnails
-  .slick-list
-  .slick-track
-  .slick-active:last-child
-  li::after {
-  display: none !important;
+.mainColor {
+  color: #075981;
 }
-.list-how-2 .slick-current li .number-circle,
-.list-how-2 .active li.number-circle {
-  background-color: #e95440;
+
+.text-gold {
+  color: #D2AF00;
 }
-.list-how-2 li .line-dashed {
-  height: auto;
-  width: 2px;
-  background: url(/assets/imgs/page/homepage3/dashed.png) repeat-y top center !important;
+
+/* =================== ACTIVE ELEMENT STYLES =================== */
+.active {
+  cursor: pointer;
+}
+.active-link {
+  position: relative;
+}
+.active-link::after {
+  content: '';
   position: absolute;
-  top: 70px;
-  left: 25px;
-  bottom: 15px;
+  bottom: -5px;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-70%);
+  height: 1px;
+  background-color: white;
 }
-.react-tel-input .flag-dropdown.invalid-number ,.react-tel-input .form-control.invalid-number{
-  border-color: grey !important; /* Change to the desired color */
+
+/* =================== LIST HOW SLIDER =================== */
+.list-how.slider-nav-thumbnails {
+  .slick-list .slick-track {
+    .slick-current li h4,
+    .slick-current li p {
+      opacity: 1;
+    }
+
+    .slick-current li .line-white {
+      display: block;
+    }
+
+    .slick-active:last-child li .line-white,
+    .slick-active:last-child li::after {
+      display: none !important;
+    }
+  }
 }
-.list-how-2 .slick-slide:last-child .line-dashed {
-  display: none;
+
+.list-how-2 {
+  .slick-current li .number-circle,
+  .active li.number-circle {
+    background-color: #e95440;
+  }
+
+  li .line-dashed {
+    height: auto;
+    width: 2px;
+    background: url(/assets/imgs/page/homepage3/dashed.png) repeat-y top center !important;
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    bottom: 15px;
+  }
+
+  .slick-slide:last-child .line-dashed {
+    display: none;
+  }
 }
+
+/* =================== TEL INPUT =================== */
+.react-tel-input {
+  .flag-dropdown.invalid-number,
+  .form-control.invalid-number {
+    border-color: grey !important;
+  }
+}
+
+/* =================== RMDP INPUT =================== */
 .rmdp-input {
-  width:100%;
+  width: 100%;
   border: none !important;
-  padding-left: 0px !important;
+  padding-left: 0 !important;
 }
 .gray .rmdp-input {
   background-color: black !important;
@@ -73,94 +108,17 @@ html {
 .light-input .rmdp-input {
   background-color: #f6f6f6 !important;
   color: #626262;
-  // padding-left: 5px !important;
   display: block !important;
 }
-.light-input {
-  .rmdp-container {
-    display: block !important;
-    // .rmdp-input
-  }
+.light-input .rmdp-container {
+  display: block !important;
 }
-.mainText{
-  font-family: GE SS Two;
-font-weight: 500;
-font-size: 30px;
-line-height: 100%;
-letter-spacing: 0%;
-color:  #075981 !important;
 
-
-
-}
-.mainColor{
-  
-  color: #075981;
-}
-.text-gold{
-  color: #D2AF00;
-}
-@media (max-width: 1199.98px) {
-  .box-search-ride {
-    .rmdp-input {
-      background-color: #f6f6f6 !important;
-      color: #626262;
-      // padding-left: 5px !important;
-      display: block !important;
-    }
-    .rmdp-container {
-      display: block !important;
-      // .rmdp-input
-    }
-  }
-}
-@media (max-width: 1199.98px) {
-  .box-search-ride-5 {
-    .rmdp-input {
-      background-color: #000 !important;
-      color: #fff;
-      // padding-left: 5px !important;
-      display: block !important;
-    }
-    .rmdp-container {
-      display: block !important;
-      // .rmdp-input
-    }
-  }
-}
-.active{
-  cursor: pointer; 
-  
-}
-.active-link {
-
-  position: relative;
-}
-.active-link::after {
-content: '';
-bottom: -5px;
-width: 50%;
-left: 50%;
-transform: translateX(-70%);
-height: 1px;
-background-color: white;
-  position: absolute;
-}
-.car-filter-active {
-  background-color: #f0fbf7;
-  color: #e95440 !important;
-}
-.cursor-pointer {
-  cursor: pointer;
-}
-.rmdp-day.rmdp-selected span:not(.highlight) {
-  // background-color: #626262 !important;
+.rmdp-day.rmdp-selected span:not(.highlight),
+.rmdp-day.rmdp-today span {
   background-color: black !important;
 }
 .rmdp-day:not(.rmdp-disabled, .rmdp-day-hidden) span:hover {
-  background-color: #626262 !important;
-}
-.rmdp-day.rmdp-today span {
   background-color: #626262 !important;
 }
 .rmdp-week-day {
@@ -172,6 +130,7 @@ background-color: white;
 }
 .rmdp-arrow-container:hover {
   background-color: #626262 !important;
+
   & > * {
     border: solid #fff !important;
     border-width: 0 2px 2px 0 !important;
@@ -180,200 +139,209 @@ background-color: white;
 .rmdp-time-picker div input {
   width: 30px !important;
 }
-.mobileMenuParent {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  .menu-expand {
-    transition: 0.4s;
-  }
 
-  // span {
-  //   &:nth-child(1) {
-  //     font-size: 20px !important;
-  //   }
-  //   &:nth-child(3) {
-  //     display: none;
-  //   }
-  // }
-  &.parent-open {
-    .menu-expand {
-      transform-origin: 50% 36%;
-      transform: rotate(180deg);
-    }
-    // span {
-    //   &:nth-child(3) {
-    //     display: block;
-    //   }
-    //   &:nth-child(2) {
-    //     display: none;
-    //   }
-    // }
-  }
-}
-.mobile-sub-menu {
-  max-height: 0px;
-  padding-top: 0px !important;
-  padding-left: 3px !important;
-
-  overflow: hidden;
-  transition: 0.5s;
-  &.menu-open {
-    max-height: 500px;
-  }
-}
-// .mobile-header-wrapper-style
-//   .mobile-header-wrapper-inner
-//   .mobile-header-content-area
-//   .mobile-menu-wrap
-//   nav
-//   .mobile-menu
-//   li {
-//   padding: 0 !important;
-// }
-@media (min-width: 1400px) {
-  .telephonenumber {
-    display: none !important;
-  }
-}
-@media (min-width: 1700px) {
-  .telephonenumber {
-    display: inline-block !important;
-  }
-}
-@media (min-width: 1400px) {
-  .languageselect {
-    display: none !important;
-  }
-}
-@media (min-width: 1700px) {
-  .languageselect {
-    display: inline-block !important;
-  }
-}
-@media (max-width: 1200px) {
-  .authlink {
-    display: none !important;
-  }
-}
-.boxBgImage img{
-  object-fit: cover !important;
-}
-@media (min-width: 1200px) and (max-width: 1600px) {
-  /* Your styles for laptops */
-  .boxBgImage {
-    height: 620px !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1600px) {
-  /* Your styles for laptops */
-  .header.header-homepage9 .main-header .header-left .header-logo {
-    width: 12%;
-  }
-  .header.header-homepage9 .main-header .header-left .header-nav {
-    width: 54%;
-  }
-  .header.header-homepage9 .main-header .header-left .header-right {
-    width: 28%;
-  }
+/* =================== HEADER + NAVIGATION =================== */
+.header-homepage5 {
+  background-color: #000;
 }
 .header-homepage5.stick .header-top-main {
   @media (max-width: 1200px) {
     display: block !important;
   }
 }
-.header-homepage5 {
-  background-color: #000000;
-}
-
 .mobile-header-wrapper-inner {
   background-color: #fff;
 }
-.serviceVirticalSlider {
-  @media (max-width: 992px) {
-    flex-direction: column !important;
-    .image {
+.mobileMenuParent {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .menu-expand {
+    transition: 0.4s;
+  }
+
+  &.parent-open .menu-expand {
+    transform-origin: 50% 36%;
+    transform: rotate(180deg);
+  }
+}
+.mobile-sub-menu {
+  max-height: 0;
+  padding-top: 0 !important;
+  padding-left: 3px !important;
+  overflow: hidden;
+  transition: 0.5s;
+
+  &.menu-open {
+    max-height: 500px;
+  }
+}
+
+/* =================== UTILITY CLASSES =================== */
+.car-filter-active {
+  background-color: #f0fbf7;
+  color: #e95440 !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.my-50 {
+  margin-block: 50px !important;
+}
+.boxShadowCard {
+  box-shadow:
+    -4px 4px 8px rgba(0, 0, 0, 0.1),
+     4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =================== MEDIA QUERIES =================== */
+@media (max-width: 1199.98px) {
+  .box-search-ride, .box-search-ride-5 {
+    .rmdp-input {
+      background-color: #f6f6f6 !important;
+      color: #626262;
+      display: block !important;
     }
-    .content {
-      & > * {
-        padding-left: 0 !important;
-      }
+    .rmdp-container {
+      display: block !important;
+    }
+  }
+
+  .box-search-ride-5 .rmdp-input {
+    background-color: #000 !important;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1400px) {
+  .telephonenumber,
+  .languageselect {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .telephonenumber,
+  .languageselect {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .authlink {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .boxBgImage {
+    height: 620px !important;
+  }
+
+  .header.header-homepage9 .main-header .header-left {
+    .header-logo {
+      width: 12%;
+    }
+    .header-nav {
+      width: 54%;
+    }
+    .header-right {
+      width: 28%;
     }
   }
 }
-.hero1nagigation {
-  @media (max-width: 580px) {
+
+@media (max-width: 992px) {
+  .blugBg {
+    display: none;
+  }
+
+  .serviceVirticalSlider {
+    flex-direction: column !important;
+
+    .content > * {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .hero1nagigation {
     top: 10px;
   }
 }
+
 @media (max-width: 575.98px) {
   .header-homepage5 .header-top-main .burger-icon {
     top: 15px !important;
     left: 15px;
   }
 }
-.searchLocations {
-  color: #626262 !important;
+
+/* =================== BACKGROUND & IMAGES =================== */
+.boxBgImage img {
+  object-fit: cover !important;
 }
-.blugBg{
+
+.blugBg {
   position: absolute;
   width: 782px;
   height: 454px;
   background: #124264;
-z-index: -1;
-top: -50px;
-left: -300px;
-  }
-  .imgAbout{
-    position: absolute;
-    width: 282px;
-    height:104px;
-    background-image: url(/assets/imgs/icons/AboutIcon3.png);
-    background-repeat: no-repeat;
-  // bottom: -100px;
-  z-index: 9999;
-  top: 45%;
-  right: 0px;
-  }
-  .imgAbout2{
-    position: absolute;
-    width: 282px;
-    height:104px;
-    background-image: url(/assets/imgs/icons/aboutIcon5.png);
-    background-repeat: no-repeat;
-  // bottom: -100px;
-  z-index: 9999;
-  top:  28%;
-  right: -7%;
-  }
-  @media (max-width: 992px) {
-    .blugBg{
-      display: none;
-    }
-    
-  }
-  .my-50{
-    margin-block: 50px !important;
-  }
-  .boxShadowCard{
-   
-      box-shadow: 
-        -4px 4px 8px rgba(0, 0, 0, 0.1),   /* left */
-         4px 4px 8px rgba(0, 0, 0, 0.1);   /* right & bottom */
-    
-    
-  }
-  .bgItem{
-    width: 100vw;
-    position: absolute;
-height: 600px;
-bottom: 0;
-right:0;
-left: 0;
-z-index: -1;
-background-color:  #DFEAEF;
-;
-opacity: 0.47;
+  z-index: -1;
+  top: -50px;
+  left: -300px;
+}
+.blugBg.ltr{
+  left: 0 ;
+  right: -500px !important;
+}
 
-  }
+.imgAbout,
+.imgAbout2 {
+  position: absolute;
+  width: 282px;
+  height: 104px;
+  background-repeat: no-repeat;
+  z-index: 9999;
+}
+.imgAbout {
+  background-image: url(/assets/imgs/icons/AboutIcon3.png);
+  top: 45%;
+  right: 0;
+}
+.imgAbout2 {
+  background-image: url(/assets/imgs/icons/aboutIcon5.png);
+  top: 28%;
+  right: -7%;
+}
+
+.bgItem {
+  position: absolute;
+  width: 100vw;
+  height: 600px;
+  bottom: 0;
+  z-index: -1;
+  background-color: #DFEAEF;
+  opacity: 0.47;
+}
+
+.rightimgPurpose {
+  position: absolute;
+  top: -200px;
+}
+
+.searchLocations {
+  color: #626262 !important;
+}
+.footerText{
+  color: #989897;
+  font-family: 'GE SS Two';
+font-weight: 300;
+font-size: clamp(1.5rem, 3vw + 1rem, 39px);
+line-height: 1;
+letter-spacing: 0;
+
+}

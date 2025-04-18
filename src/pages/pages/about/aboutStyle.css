@@ -1,14 +1,16 @@
-.LeaveMssg{
+.LeaveMssg {
     /* background-color:  #F1F1F6    ; */
     height: 400px;
 }
-.floatBtnContact{
+
+.floatBtnContact {
     position: absolute;
     left: 30px;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
 }
-.bluBg{
+
+.bluBg {
     position: absolute;
     width: 500px;
     left: 0;
@@ -17,7 +19,8 @@
     top: -50px;
     z-index: -1;
 }
-.bluBg2{
+
+.bluBg2 {
     position: absolute;
     width: 500px;
     right: 0;
@@ -25,4 +28,28 @@
     height: 375px;
     top: -50px;
     z-index: -1;
+}
+
+.text-votes {
+    color: #075981;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 3vw, 40px);
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.contact {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
