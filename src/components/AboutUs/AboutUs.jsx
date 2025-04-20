@@ -18,7 +18,7 @@ export const AboutUs = ({ right }) => {
       <div className="imgAbout"></div>
       <div className="imgAbout2"></div>
 
-      <div className="my-5 pt-5">
+      <div className="my-5 mb-3 pt-5">
         <h3 className={`${right ? "text-end" : "text-center"} fw-bold mb-5 wow fadeInUp mainText`}>
           {t("aboutSection.title")}
         </h3>

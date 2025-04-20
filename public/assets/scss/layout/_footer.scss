@@ -275,9 +275,9 @@ footer a {
   line-height: 40px;
   transition-duration: 0.2s;
   vertical-align: middle;
-  &:last-child {
-    margin-right: 0px;
-  }
+  // &:last-child {
+  //   margin-right: 0px;
+  // }
   &.icon-facebook {
     background: url(/assets/imgs/template/icons/fb.svg) no-repeat center;
     transition-duration: 0.2s;
@@ -291,11 +291,11 @@ footer a {
   &.icon-twitter {
     background: url(/assets/imgs/template/icons/twitter-x-logo-white.svg) no-repeat center;
     transition-duration: 0.2s;
-    width: 20px;
-    height: 20px;
+    background-size: 20px;
     &:hover {
       background: url(/assets/imgs/template/icons/twitter-x-logo-white.svg) no-repeat center;
       transition-duration: 0.2s;
+      background-size: 20px;
       background-color: rgb(255 255 255 / 20%);
     }
   }

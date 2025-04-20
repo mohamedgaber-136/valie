@@ -12,6 +12,28 @@
     "subTitle": "The appraisal process is a fundamental step in determining the market value of a property. It is one of the most important steps in many cases related to investment and asset management for companies. The importance of real estate valuation lies in the urgent need for it in economic sectors such as banks and others."
   },
 
+  "facts": {
+    "title": "What do we offer",
+    "subTitle": "We provide the best services according to the highest specifications",
+    "description": "We offer a wide range of evaluation services through accredited residents by the Saudi Commission For accredited residents"
+  },
+
+  "purpose": {
+    "title": "The purpose of the process",
+    "subTitle": "Real estate evaluation",
+    "list": [
+      "Determine the market value of the property",
+      "Determine the rental value of the property",
+      "Measuring the fair value by applying the standards of the International Accounting Council",
+      "Ifrs from the Saudi Public Accountants Authority 13",
+      "Evaluation of real estate funds according to the requirements of the Capital Market Authority.",
+      "Evaluation for the purpose of calculating the annual legal zakat ratio",
+      "Evaluation for the purpose of distributing property and inheritance",
+      "Determine the best use of the property",
+      "Judicial Guard"
+    ]
+  },
+
   "aboutSection": {
     "title": "About Us",
     "about": "About",

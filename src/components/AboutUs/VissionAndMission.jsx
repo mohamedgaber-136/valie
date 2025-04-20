@@ -1,5 +1,5 @@
-import Card from 'react-bootstrap/Card';
-import './aboutus.css';
+import Card from "react-bootstrap/Card";
+import "./aboutus.css";
 
 import img from "../../../public/assets/imgs/icons/vission.png";
 import bottom from "../../../public/assets/imgs/bottomContact.png";
@@ -9,51 +9,46 @@ import right from "../../../public/assets/imgs/bottomContact2.png";
 const data = [
   {
     icon: img,
-    title: 'رؤيتنا',
+    title: "رؤيتنا",
     content: [
       "تقديم مفهوم جديد",
       "لمهنة التقييم العقاري",
       "يرتكز على أساليب علمية",
       "وقيم أخلاقية، مع توفير",
       "حلول متنوعة تلبي",
-      "احتياجات العملاء."
-    ]
+      "احتياجات العملاء.",
+    ],
   },
   {
     icon: img,
-    title: 'رسالتنا',
+    title: "رسالتنا",
     content: [
       "تقديم خدمات التقييم",
       "بدقة عالية وبأسلوب",
       "يرتكز على أساليب علمية",
       "واضح يعكس معطيات",
       "السوق، وفقًا لأعلى",
-      "المعايير المحلية والدولية."
-    ]
+      "المعايير المحلية والدولية.",
+    ],
   },
   {
     icon: img,
-    title: 'قيمنا',
-    content: [
-      "النزاهة",
-      "الأمانة",
-      "المسؤولية",
-      "الحيادية والشفافية"
-    ]
-  }
+    title: "قيمنا",
+    content: ["النزاهة", "الأمانة", "المسؤولية", "الحيادية والشفافية"],
+  },
 ];
 
 export const VissionAndMission = () => {
   return (
-    <div className="container position-relative d-flex flex-column align-items-center align-items-lg-stretch flex-lg-row justify-content-center gap-5 mt-50">
+    <div className="container py-3 position-relative d-flex flex-column align-items-center align-items-lg-stretch flex-lg-row justify-content-center gap-5 mt-50">
       {data.map(({ icon, title, content }, index) => (
         <Card
           key={index}
-          style={{ width: '18rem', borderRadius: '20px' }}
+          style={{ width: "18rem", borderRadius: "20px" }}
           className="d-flex flex-column boxShadowCard justify-content-between wow fadeInUp p-4 border-0"
         >
           <div className="d-flex justify-content-center">
-            <Card.Img variant="top" src={icon} style={{ width: '75px' }} />
+            <Card.Img variant="top" src={icon} style={{ width: "75px" }} />
           </div>
           <Card.Body>
             <Card.Title className="text-center">{title}</Card.Title>
