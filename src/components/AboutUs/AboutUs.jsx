@@ -40,7 +40,7 @@ export const AboutUs = ({ right }) => {
           <h3 className="fw-bold mainColor">{t("aboutSection.line2")}</h3>
           <h5 className="p-0 m-0 fw-normal text-secondary">{t("aboutSection.description")}</h5>
           <Link
-            to="/more"
+            to="/about"
             className="curser-pointer"
             style={{
               zIndex: "100px",
