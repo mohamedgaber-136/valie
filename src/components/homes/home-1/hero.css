@@ -39,9 +39,8 @@
 }
 
 .box-swiper {
-    border: #D2AF00 solid 2px;
     padding-inline: 20px;
-    width:35%;
+    width: 35%;
     position: relative !important;
     top: 48%;
     right: 200px;

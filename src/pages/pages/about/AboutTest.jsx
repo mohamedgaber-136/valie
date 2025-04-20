@@ -27,7 +27,7 @@ const AboutTest = () => {
       <CustomNavbar dark={true} />
 
       <main className="pt-5">
-        {/* <AboutUs right={true} /> */}
+        <AboutUs right={true} />
         <div className="bgItem"></div>
         {/* <h2 className="text-center text-votes">خطوات التقييم</h2> */}
 
@@ -146,7 +146,6 @@ const AboutTest = () => {
                       />
 
                       <div className="floatBtnContact py-1">
-                        {" "}
                         <Button
                           variant="dark"
                           style={{
