@@ -11,6 +11,7 @@ import { Container, Form, InputGroup, Button } from "react-bootstrap";
 import rightimg from "/assets/imgs/icons/purposeRightImg.png";
 import bottom from "/assets/imgs/bottomContact.png";
 import contact from "/assets/imgs/contactPath.png";
+import image1 from "../../../../public/assets/imgs/icons/AboutIcon3.png";
 
 import "./contactUs.css";
 
@@ -48,7 +49,7 @@ export default function ContactPage1() {
         <h4 className="teamTitle"> تواصل معنا </h4>
         <ContactForm />
 
-        <div className="row gap-5 gap-md-3 justify-content-center p-0 my-5">
+        <div className="row gap-5 gap-md-3 justify-content-center p-0 my-5 mb-0 pt-5">
           {contactData.map((item, index) => (
             <div
               key={index}
@@ -61,6 +62,9 @@ export default function ContactPage1() {
           ))}
         </div>
       </main>
+
+      <img src={image1} className="rightContactImg" alt="" />
+      <img src={image1} className="leftContactImg" alt="" />
 
       <img src={rightimg} className="leftImg" alt="" />
       <img src={rightimg} className="rightimg" alt="" />
