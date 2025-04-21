@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
+import img from "../../../../public/assets/imgs/icons/purposeRightImg.png";
 
-import img from '../../../../public/assets/imgs/icons/purposeRightImg.png'
 export default function Facts() {
- 
+  const { t } = useTranslation();
+
   return (
     <section className="section  position-relative    " >
       <div className="bgItem"></div>
-<img src={img} className='banerLeftimg' alt="" />
+      {/* <img src={img} className="banerLeftimg" alt="" /> */}
       <div className="bg-showcase">
         <div className="container-sub ">
           <div className="row align-items-center">
@@ -15,14 +17,13 @@ export default function Facts() {
               </h4>
               <h3 className=" text-gold  fw-bold wow fadeInUp mb-2">
               نقدم أفضل الخدمات وفق أعلى المواصفات              </h3>
-              <h4 className=" mb-2 color-white AboutTitle wow fadeInUp">
+              <h4 className=" mb-2 color-white fw-bold wow fadeInUp">
               نقدم مجموعة واسعة من خدمات التقييم من خلال مقيمين معتمدين من قبل الهيئة السعودية للمقيمين المعتمدين
               </h4>
             </div>
-        
           </div>
         </div>
       </div>
-    </section>
-  );
+      </section>
+)
 }

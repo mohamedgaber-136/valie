@@ -1,8 +1,11 @@
 // Purpose.jsx
-import './purpose.css';
-import rightimg from '../../../public/assets/imgs/icons/purposeRightImg.png';
+import "./purpose.css";
+import rightimg from "../../../public/assets/imgs/icons/purposeRightImg.png";
+import { useTranslation } from "react-i18next";
 
-export const Purpose = ({ title, subtitle, data, image }) => {
+export const Purpose = ({ title, subtitle, data, image, mainTitle, isReversed = false }) => {
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
   return (
     <div className="grandparen">
       <div className="overflow-x-hidden position-relative PurposeContainer  ">
@@ -18,7 +21,7 @@ export const Purpose = ({ title, subtitle, data, image }) => {
               ))}
             </div>
           </div>
-          <div className="col-12  col-md-6 p-0 m-0">
+          <div className="col-12 col-md-5 p-0 m-0">
             <img src={image} className="floatImg" alt="" />
           </div>
         </div>
