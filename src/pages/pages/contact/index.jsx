@@ -8,9 +8,8 @@ import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 
 import { Container, Form, InputGroup, Button } from "react-bootstrap";
 
-import rightimg from "/assets/imgs/icons/purposeRightImg.png";
-import bottom from "/assets/imgs/bottomContact.png";
-import contact from "/assets/imgs/contactPath.png";
+import {  Row, Col,   } from 'react-bootstrap';
+
 
 import "./contactUs.css";
 
@@ -41,11 +40,13 @@ const contactData = [
 export default function ContactPage1() {
   return (
     <div className="AlbumParent position-relative">
+      <div className="bgBlue"></div>
       <MetaComponent meta={metadata} />
       <CustomNavbar dark />
 
       <main className="main FormParent">
-        <h4 className="teamTitle"> تواصل معنا </h4>
+        <h4 className="teamTitle" style={{                     fontFamily: 'ge-light !important',
+}}> تواصل معنا </h4>
         <ContactForm />
 
         <div className="row gap-5 gap-md-3 justify-content-center p-0 my-5">
@@ -62,67 +63,70 @@ export default function ContactPage1() {
         </div>
       </main>
 
-      <img src={rightimg} className="leftImg" alt="" />
-      <img src={rightimg} className="rightimg" alt="" />
-      <div className="Blubg" />
-      <div className="bluBg" />
-      <div className="bluBg2" />
+    
+      <div className="LeaveMssg position-relative my-5">
 
-      <section
-        className="position-relative d-flex justify-content-center align-items-center"
-        style={{ backgroundColor: "#f3f4f8", padding: "6rem 0" }}
-      >
-        <img src={contact} alt="" className="contact" />
-        <img src={bottom} className="bottom" alt="" />
+   <div style={{ padding: '6rem 0'    }} className="position-relative d-flex justify-content-center
+       align-items-center ">
 
-        <Container>
-          <div className="text-center mb-4">
-            <h5
-              style={{
-                fontFamily: "Tajawal",
-                fontWeight: 700,
-                fontSize: "clamp(1rem, 1.5vw + 0.3rem, 25px)",
-                color: "#0a2c52",
-              }}
-            >
-              اترك بريدك الالكتروني ليصلك منا كل جديد
-            </h5>
-          </div>
+       <Container className="">
+         <Row className="justify-content-center  align-items-center text-center mb-4">
+           <Col md={10} lg={8}>
+             <h5 style={{
+               fontFamily: 'ge-light',
+               fontWeight: 300,
+               fontSize: 'clamp(12px, 1.5vw + 0.3rem, 15px)',
+               color: ' rgba(6, 75, 115, 1)'
+             }} className="mb-2">
+نشرتنا الاخبارية             </h5>
+             <h5 style={{
+               fontFamily: 'Tajawal',
+               fontWeight: 700,
+               fontSize: 'clamp(1rem, 1.5vw + 0.3rem, 25px)',
+               color: '#0a2c52'
+             }}>
+               اترك بريدك الالكتروني ليصلك منا كل جديد
+             </h5>
+           </Col>
+         </Row>
+         <Row className="justify-content-center">
+           <Col md={10} lg={6}>
+             <Form>
+               <InputGroup className="position-relative">
+             
+                 <Form.Control
+                   type="email"
+                   placeholder="اكتب بريدك الالكتروني"
+                   style={{
+                     fontFamily: 'ge-light',
+                     textAlign: 'right',
+                     borderTopRightRadius: '8px',
+                     borderBottomRightRadius: '8px',
+                     borderLeft: 'none',
+                     paddingRight: '1rem'
+                   }}
+                   className="border p-2"
+                 />
+ 
+                 <div className="floatBtnContact py-1">     <Button  variant="dark" style={{
+                   fontFamily: 'ge-light',
+                  borderRadius:'10px',
+                   padding: '0.6rem 1.5rem',
+                   backgroundColor: '#032E4F'
+ 
+                 }}>
+                   إرسال
+                 </Button></div>
+                
+               </InputGroup>
+             </Form>
+           </Col>
+         </Row>
+       </Container>
+     </div>
+      </div>
 
-          <div className="d-flex justify-content-center">
-            <Form className="w-100" style={{ maxWidth: 600 }}>
-              <InputGroup>
-                <Form.Control
-                  type="email"
-                  placeholder="اكتب بريدك الالكتروني"
-                  style={{
-                    fontFamily: "Tajawal",
-                    textAlign: "right",
-                    borderTopRightRadius: 8,
-                    borderBottomRightRadius: 8,
-                    borderLeft: "none",
-                    paddingRight: "1rem",
-                  }}
-                  className="border p-2"
-                />
-                <div className="floatBtnContact py-1">
-                  <Button
-                    variant="dark"
-                    style={{
-                      fontFamily: "Tajawal",
-                      borderRadius: 10,
-                      padding: "0.6rem 1.5rem",
-                      backgroundColor: "#032E4F",
-                    }}
-                  >
-                    إرسال
-                  </Button>
-                </div>
-              </InputGroup>
-            </Form>
-          </div>
-        </Container>
-      </section>
+    
 
       <Footer1 />
     </div>

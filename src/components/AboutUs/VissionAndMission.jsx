@@ -58,7 +58,7 @@ export const VissionAndMission = () => {
           <Card.Body>
             <Card.Title className="text-center">{title}</Card.Title>
             {content.map((text, idx) => (
-              <Card.Text key={idx} className="text-secondary my-2 text-center">
+              <Card.Text key={idx} className="text-secondary AboutTitle my-2 text-center">
                 {text}
               </Card.Text>
             ))}

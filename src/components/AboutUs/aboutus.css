@@ -18,3 +18,13 @@
 .rightMission {
     right: -200px;
 }
+
+.AboutTitleMain {
+    font-family: 'ge-Medium';
+
+}
+
+.AboutTitle {
+    font-family: 'ge-light';
+    font-weight: 500 !important;
+}

@@ -9,19 +9,19 @@ export const Team = () => {
             img:team3,
     
             experience:`18 سنة خبرة في مجال التقييم`,
-            title:'الشريك المؤسس و المدير التنفيذي',
+            title:'الشريك  و المدير التنفيذي',
             float:false,
-            agent:`مدرب معتمد و عضو أساسي  في الهيئة 
-            السعودية للمقيمين المعتمدين`
+            
+            agent:<span  className='Lheight'>مدرب معتمد و عضو أساسي  في الهيئه<br />  السعودية للمقيمين المعتمدين</span>
          },
          {
            title:'الشريك المؤسس و الرئيس التنفيذي',
-            experience:`25 سنة خبرة في المجال العقاري و 16 سنة في
-    مجال التقييم العقاري`,
+            experience:<span className='Lheight'>25 سنة خبرة في المجال العقاري و 16 سنة
+<br />في مجال التقييم العقاري</span>,
             img:team2,
             name:'وحيد بن أحمد الجساس',
-            agent:`عضو أساسي زميل في الهيئة السعودية
-            للمقيمين المعتمدين`,
+         
+            agent:<span className='Lheight'>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
                 float:true
          },
         {
@@ -29,8 +29,8 @@ export const Team = () => {
             name:' عبدالله بن إبراهيم السكران  ',
             title:' مدير التقييم العقاري  ',
             experience:`10 سنوات خبرة في مجال التقييم  `,
-agent:` عضو أساسي زميل في الهيئة السعودية
-للمقيمين المعتمدين`,
+            agent:<span className='Lheight'>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
+
 float:false
         },
     ]
@@ -45,17 +45,17 @@ float:false
              <img src={item.img} className='profileImg' alt="" />
                 </div>
              <div className="d-flex align-items-center justify-content-center flex-column gap-2 dataContent">
-             <h2 className='AgentName  CustomFont text-center'>
+             <h2 className='AgentName   text-center'>
                 {item.name}
              </h2>
-             <h4 className='AgentTitle CustomFont  text-center'>
+             <h4 className='AgentTitle   text-center'>
                 {item.title}
              </h4>
-             <h6 className='Agentexp  CustomFont text-center'>
+             <h6 className='Agentexp   text-center'>
                 {item.experience}
              </h6>
              </div>
-             <h6 className='Agentexp CustomFont text-center'>
+             <h6 className='Agentexp  text-center'>
                 {item.agent}
              </h6>
          </div>

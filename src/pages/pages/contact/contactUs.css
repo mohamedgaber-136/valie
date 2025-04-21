@@ -5,6 +5,14 @@
   z-index: 1;
 }
 
+.LeaveMssg {
+  background-image: url(../../../../public/assets/imgs/ContactBgBg.png);
+  background-size: cover;
+  background-position: center;
+  /* background-color:  #F1F1F6    ; */
+  height: 400px;
+}
+
 .rightimg {
   left: 5%;
   top: 30%;
@@ -45,7 +53,7 @@
 
 .teamTitle {
   color: #075981;
-  font-family: 'GE SS Two';
+  font-family: 'ge-light';
   font-weight: 700;
   padding-right: 100px;
   font-size: clamp(1.5rem, 2vw + 1rem, 30px);
@@ -55,8 +63,8 @@
 }
 
 .contact-title {
-  font-family: 'Tajawal';
-  font-weight: 700;
+  font-family: 'ge-light';
+  font-weight: 300;
   font-size: clamp(1.2rem, 2vw + 0.5rem, 25px);
   line-height: 100%;
   letter-spacing: 0%;
@@ -70,7 +78,7 @@
 
 .contact-content {
   color: #828282;
-  font-family: 'Tajawal';
+  font-family: 'ge-light';
   font-weight: 400;
   font-size: clamp(1rem, 1.5vw + 0.3rem, 20px);
   line-height: 100%;
@@ -117,4 +125,14 @@ img.contact:hover {
   height: 300px;
   z-index: 99;
   background-color: white !important;
+}
+
+.bgBlue {
+  position: absolute;
+  background: rgba(18, 66, 100, 1);
+  width: 600px;
+  height: 600px;
+  left: 0;
+  top: 150px;
+
 }

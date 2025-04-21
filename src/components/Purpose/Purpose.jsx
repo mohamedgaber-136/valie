@@ -5,7 +5,7 @@ import rightimg from '../../../public/assets/imgs/icons/purposeRightImg.png';
 export const Purpose = ({ title, subtitle, data, image }) => {
   return (
     <div className="grandparen">
-      <div className="overflow-x-hidden position-relative PurposeContainer my-2 my-md-5">
+      <div className="overflow-x-hidden position-relative PurposeContainer  ">
         <div className="row gap-3 p-0 m-0 align-items-center gap-md-0">
           <div className="col-12 d-flex flex-column gap-3 p-0 m-0 col-md-6">
             <h4 className="title">{title}</h4>

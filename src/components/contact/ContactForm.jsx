@@ -15,7 +15,8 @@ export default function ContactForm() {
       <img src={left} alt=""  className="leftImgContact"/>
       <img src={right} alt="" className="rightImgContact" />
         <div className="">
-          <h3 className="mb-10 text-center  text-white fw-bold wow fadeInUp">
+          <h3 className="mb-10 text-center  text-white fw-bold wow fadeInUp" style={{                     fontFamily: 'ge-light',
+}}>
 تواصل معنا الان          </h3>
           <div className="row gap-2  justify-content-center align-items-start">
 
@@ -26,7 +27,8 @@ export default function ContactForm() {
                 <div className="col-lg-6 col-md-6">
                   <div className="form-group">
                   
-                    <label className="form-label newLabel" htmlFor="FirstName">
+                    <label className="form-label newLabel" htmlFor="FirstName" style={{                     fontFamily: 'ge-light',
+}}>
                     الاسم
                     </label>
                     <input
@@ -40,7 +42,8 @@ export default function ContactForm() {
                
                 <div className="col-lg-6 col-md-6">
                   <div className="form-group ">
-                    <label className="form-label newLabel" htmlFor="email">
+                    <label className="form-label newLabel" htmlFor="email" style={{                     fontFamily: 'ge-light',
+}}>
                       البريد الالكتروني
                     </label>
                     <input
@@ -53,7 +56,8 @@ export default function ContactForm() {
                 </div>
                 <div className="col-lg-6 col-md-6">
                 <div className="form-group">
-                <label className="form-label newLabel fw-light" htmlFor="phone">
+                <label className="form-label newLabel fw-light" htmlFor="phone" style={{                     fontFamily: 'ge-light',
+}}>
                        التليفون
                     </label>
                     <input
@@ -67,7 +71,8 @@ export default function ContactForm() {
                 </div>
                 <div className="col-lg-6 col-md-6">
                   <div className="form-group">
-                    <label className="form-label newLabel" htmlFor="website">
+                    <label className="form-label newLabel" htmlFor="website" style={{                     fontFamily: 'ge-light',
+}}>
                       الموقع الالكتروني
                     </label>
                     <input
@@ -80,14 +85,16 @@ export default function ContactForm() {
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <label className="form-label newLabel" htmlFor="message">
+                    <label className="form-label newLabel" htmlFor="message" style={{                     fontFamily: 'ge-light',
+}}>
                     رسالتك
                     </label>
                     <textarea className="bg-transperncy form-control border-0 textAreaField" id="message"></textarea>
                   </div>
                 </div>
                 <div className="col-lg-12 d-flex justify-content-center">
-                  <button className="btnSend" type="submit">
+                  <button className="btnSend" type="submit" style={{                     fontFamily: 'ge-light',
+}}>
                    ارسل الان
                 
                   </button>

@@ -29,18 +29,18 @@ export const Album = () => {
     <div className='container-fluid '>
                       <  h2 className='teamTitle'>معرض الصور</h2> 
                    
-<div className="swiperParen">
+<div className="swiperParen ">
 <  h2 className=' mb-3 teamTitle text-start text-decoration-underline  cursorPointer' onClick={()=>navigate('/team')}>عرض الكل </h2> 
 <Swiper
         slidesPerView={'auto'}
-        spaceBetween={50}
+        spaceBetween={100}
       
         loop={false} // true if you want infinite loop
 
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[ Pagination]}
         className="mySwiper  wow fadeInUp"
       >
         {data.map((img, index) => (

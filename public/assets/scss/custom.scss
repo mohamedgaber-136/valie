@@ -1,21 +1,29 @@
 /* =================== FONT =================== */
 @font-face {
-  font-family: 'CustomFont';
-  src: url('/public/assets/fonts/GE-SS-Text-Medium.otf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'ge-Bold';
+  src: url('/public/assets/fonts/ArbFONTS-GE_SS_Two_Bold.otf');
+
+}
+@font-face {
+  font-family: 'ge-Medium';
+  src: url('/public/assets/fonts/ArbFONTS-GE_SS_TWO_MEDIUM.otf');
+ 
+}
+@font-face {
+  font-family: 'ge-light';
+  font-weight: lighter !important;
+  src: url('/public/assets/fonts/ArbFONTS-GE-SS-Two-Light.otf');
+
 }
 
 html, body {
-  font-family: 'CustomFont' !important;
+  font-family: 'ge-Medium' ;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 /* =================== TEXT COLORS =================== */
 .mainText {
-  font-family: 'GE SS Two';
-  font-weight: 500;
   font-size: 30px;
   line-height: 100%;
   color: #075981 !important;

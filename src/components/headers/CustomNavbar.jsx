@@ -50,7 +50,7 @@ const CustomNavbar = ({ dark }) => {
       </button>
 
       <Navbar.Collapse className={menuOpen ? 'show' : ''}>
-        <Nav className={` gap-3 ${isArabic ? 'text-end me-auto' : 'text-start ms-auto'}`}>
+        <Nav className={` gap-5 ${isArabic ? 'text-end me-auto' : 'text-start ms-auto'}`}>
           <Nav.Link href="/#home" className={shouldUseDarkLinks ? 'linknavDark' : 'linkNav text-white'}>{t('home')}</Nav.Link>
           <Nav.Link href="/about" className={shouldUseDarkLinks ? 'linknavDark' : 'linkNav text-white'}>{t('about')}</Nav.Link>
           <Nav.Link href="/#services" className={shouldUseDarkLinks ? 'linknavDark' : 'linkNav text-white'}>{t('services')}</Nav.Link>
@@ -58,7 +58,7 @@ const CustomNavbar = ({ dark }) => {
           <Nav.Link href="/#clients" className={shouldUseDarkLinks ? 'linknavDark' : 'linkNav text-white'}>{t('clients')}</Nav.Link>
           <Nav.Link href="/contact" className={shouldUseDarkLinks ? 'linknavDark' : 'linkNav text-white'}>{t('contact')}</Nav.Link>
           <Button variant="light"  className={shouldUseDarkLinks ? 'switchBtnDark' : 'switchBtn '} size="sm" onClick={toggleLanguage}>
-        {isArabic?'en':'ar'}
+        {isArabic?'EN':'AR'}
       </Button>
         </Nav>
       </Navbar.Collapse>

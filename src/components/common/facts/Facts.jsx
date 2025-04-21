@@ -3,7 +3,7 @@ import img from '../../../../public/assets/imgs/icons/purposeRightImg.png'
 export default function Facts() {
  
   return (
-    <section className="section  position-relative mb-30   " >
+    <section className="section  position-relative    " >
       <div className="bgItem"></div>
 <img src={img} className='banerLeftimg' alt="" />
       <div className="bg-showcase">
@@ -15,7 +15,7 @@ export default function Facts() {
               </h4>
               <h3 className=" text-gold  fw-bold wow fadeInUp mb-2">
               نقدم أفضل الخدمات وفق أعلى المواصفات              </h3>
-              <h4 className=" mb-2 color-white fw-bold wow fadeInUp">
+              <h4 className=" mb-2 color-white AboutTitle wow fadeInUp">
               نقدم مجموعة واسعة من خدمات التقييم من خلال مقيمين معتمدين من قبل الهيئة السعودية للمقيمين المعتمدين
               </h4>
             </div>

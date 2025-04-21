@@ -5,8 +5,7 @@ import img1 from '../../../../public/assets/imgs/1.png'
 import img2 from '../../../../public/assets/imgs/2.png'
 import img3 from '../../../../public/assets/imgs/3.png'
 import img4 from '../../../../public/assets/imgs/4.png'
-import bottom from '../../../../public/assets/imgs/bottomContact.png'
-import contact from '../../../../public/assets/imgs/contactPath.png'
+
 import './aboutStyle.css'
 import "react-lazy-load-image-component/src/effects/blur.css";
 import CustomNavbar from "@/components/headers/CustomNavbar";
@@ -81,16 +80,21 @@ import './aboutStyle.css'
   ]}
   image={img4}
 /> 
- <div className="LeaveMssg position-relative">
-  <div className="bluBg"></div>
-  <div className="bluBg2"></div>
-   <div style={{ backgroundColor: '#f3f4f8', padding: '6rem 0',    }} className="position-relative d-flex justify-content-center
+ <div className="LeaveMssg position-relative my-5">
+
+   <div style={{ padding: '6rem 0'    }} className="position-relative d-flex justify-content-center
        align-items-center ">
-          <img src={contact} alt="" className="contact" />
-          <img src={bottom} className='bottom' alt="" />
+
        <Container className="">
          <Row className="justify-content-center  align-items-center text-center mb-4">
            <Col md={10} lg={8}>
+             <h5 style={{
+               fontFamily: 'ge-light',
+               fontWeight: 300,
+               fontSize: 'clamp(12px, 1.5vw + 0.3rem, 15px)',
+               color: ' rgba(6, 75, 115, 1)'
+             }} className="mb-2">
+نشرتنا الاخبارية             </h5>
              <h5 style={{
                fontFamily: 'Tajawal',
                fontWeight: 700,

@@ -11,6 +11,7 @@
     font-size: clamp(17px, 2vw, 20px) !important;
     line-height: 35px !important;
     letter-spacing: 0% !important;
+    font-family: "ge-light" !important;
     margin-bottom: 10px !important;
     color: white !important;
 }

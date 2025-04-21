@@ -1,4 +1,7 @@
 .LeaveMssg {
+    background-image: url(../../../../public/assets/imgs/ContactBgBg.png);
+    background-size: cover;
+    background-position: center;
     /* background-color:  #F1F1F6    ; */
     height: 400px;
 }
@@ -10,25 +13,6 @@
     transform: translateY(-50%);
 }
 
-.bluBg {
-    position: absolute;
-    width: 500px;
-    left: 0;
-    background: #032E4F;
-    height: 375px;
-    top: -50px;
-    z-index: -1;
-}
-
-.bluBg2 {
-    position: absolute;
-    width: 500px;
-    right: 0;
-    background: #032E4F;
-    height: 375px;
-    top: -50px;
-    z-index: -1;
-}
 
 .text-votes {
     color: #075981;
