@@ -13,7 +13,8 @@ export default function Footer1() {
               <a className="mr-md-30 " href="/">
                 <img src={logoImg} alt="Luxride" width={"150px"} />
               </a>
-              <h2 className="footerText mt-2 CustomFo">علم و خبره</h2>
+              <h2 className="footerText mt-2 " style={{                      fontFamily:'ge-light !important'
+}}>علم و خبره</h2>
               <div className="d-flex  mt-2 align-items-center justify-content-md-end justify-content-center">
                 {socialMediaPlatforms.map((elm, i) => (
                   <a
@@ -23,13 +24,15 @@ export default function Footer1() {
                     style={{
                       width: "30px",
                       height: "30px",
+                      fontFamily:'ge-light'
                     }}
                   ></a>
                 ))}
               </div>
             </div>
             <div className="col-lg-4 mb-40 col-6 d-flex justify-content-start flex-column align-items-center align-items-md-start">
-              <h5 className="text-18-medium text-gold mb-20 wow fadeInUp">روابط سريعه</h5>
+              <h5 className="text-18-medium text-gold mb-20 wow fadeInUp" style={{                      fontFamily:'ge-light'
+}}>روابط سريعه</h5>
               <ul className="menu-footer wow fadeInUp">
                 {links1.map((elm, i) => (
                   <li key={i} className="text-start text-md-center fw-bolder">
@@ -41,12 +44,14 @@ export default function Footer1() {
               </ul>
             </div>
             <div className="col-lg-4 col-6  d-flex  justify-content-start flex-column align-items-center  align-items-md-start mb-40">
-              <h5 className="text-18-medium text-end text-md-center  text-gold mb-20 wow fadeInUp">
+              <h5 className="text-18-medium text-end text-md-center  text-gold mb-20 wow fadeInUp" style={{                      fontFamily:'ge-light'
+}}>
                 اتصل بنا
               </h5>
               <ul className="menu-footer wow fadeInUp">
                 {links2.map((elm, i) => (
-                  <li key={i} className="text-end text-md-center">
+                  <li key={i} className="text-end text-md-center" style={{                      fontFamily:'ge-light'
+                  }}>
                     <a className="text-end" href={elm.href}>
                       {elm.name}
                     </a>
@@ -60,7 +65,8 @@ export default function Footer1() {
       <div className="footer-2">
         <div className="container-sub">
           <div className="footer-bottom text-center">
-            <span className="text-14 text-center color-white mr-50">
+            <span className="text-14 text-center color-white mr-50" style={{                      fontFamily:'ge-light'
+}}>
               جميع الحقوق محفوظه {new Date().getFullYear()}
             </span>
           </div>

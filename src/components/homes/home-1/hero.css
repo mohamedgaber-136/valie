@@ -89,7 +89,7 @@
     .box-swiper {
         padding-inline: 20px;
         width: 100%;
-        right: 20px;
+        right: 20px !important;
 
         position: relative !important;
         top: 45%;

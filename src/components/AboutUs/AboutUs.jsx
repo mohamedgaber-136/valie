@@ -19,7 +19,7 @@ export const AboutUs = ({ right }) => {
       <div className="imgAbout2"></div>
 
       <div className="my-5 pt-5">
-        <h3 className={`${right ? 'text-end' : 'text-center'} fw-bold mb-5 wow fadeInUp mainText`}>
+        <h3 className={`${right ? 'text-end' : 'text-center'} fw-bold mb-5 wow fadeInUp mainText AboutTitle`}>
           {t('aboutSection.title')}
         </h3>
         {!right && (
@@ -32,22 +32,22 @@ export const AboutUs = ({ right }) => {
       <div className="row align-items-center">
         <div className="col-md-6 col-12 d-flex flex-column gap-2">
           <div className="d-flex align-items-center gap-2 mb-2">
-            <h3 className="fw-lighter mainText">
+            <h3 className="fw-lighter mainText AboutTitle">
               {t('aboutSection.about')}
             </h3>
             <img src={goldLogo} alt="" width="100px" />
           </div>
 
-          <h3 className="fw-bold mainColor">
+          <h3 className="fw-bold mainColor AboutTitle">
             {t('aboutSection.line1')}
           </h3>
-          <h3 className="fw-bold mainColor">
+          <h3 className="fw-bold mainColor AboutTitle">
             {t('aboutSection.line2')}
           </h3>
-          <h5 className="p-0 m-0 fw-normal text-secondary">
+          <h5 className="p-0 m-0 fw-normal text-secondary AboutTitle">
             {t('aboutSection.description')}
           </h5>
-          <h6 className="fw-normal mainColor">
+          <h6 className="fw-normal mainColor AboutTitle">
             {t('aboutSection.readMore')}
           </h6>
         </div>

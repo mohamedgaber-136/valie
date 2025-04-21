@@ -8,7 +8,6 @@ export const Team = () => {
         {        name:'عبدالمجيد بن حمد العليان',
             img:team3,
     
-            experience:`18 سنة خبرة في مجال التقييم`,
             title:'الشريك  و المدير التنفيذي',
             float:false,
             
@@ -16,8 +15,7 @@ export const Team = () => {
          },
          {
            title:'الشريك المؤسس و الرئيس التنفيذي',
-            experience:<span className='Lheight'>25 سنة خبرة في المجال العقاري و 16 سنة
-<br />في مجال التقييم العقاري</span>,
+       
             img:team2,
             name:'وحيد بن أحمد الجساس',
          
@@ -28,7 +26,6 @@ export const Team = () => {
             img:team1,
             name:' عبدالله بن إبراهيم السكران  ',
             title:' مدير التقييم العقاري  ',
-            experience:`10 سنوات خبرة في مجال التقييم  `,
             agent:<span className='Lheight'>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
 
 float:false

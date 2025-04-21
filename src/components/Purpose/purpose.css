@@ -3,7 +3,7 @@ body {
 }
 
 .title {
-    font-family: 'GE SS Two';
+    font-family: 'ge-light';
     font-weight: 300;
     font-size: clamp(1.5rem, 2vw + 1rem, 1.875rem);
     /* Responsive between ~24px and 30px */
@@ -106,13 +106,15 @@ body {
     position: relative;
     inset-inline-start: 0px;
     /* inset-inline-start: 250px; */
-    /* right: 250px; */
+    right: 250px;
     z-index: 99;
-    height: 400px;
-    object-fit: contain;
+    width: 800px;
+    object-fit: cover;
 }
 
 .floatImg2 {
+    object-fit: cover;
+    width: 800px;
     position: relative;
     right: -250px;
 }
@@ -123,7 +125,7 @@ body {
 
 @media (max-width: 1200px) {
     .PurposeContainer {
-        padding: 80px 150px;
+        padding: 80px 100px;
     }
 }
 

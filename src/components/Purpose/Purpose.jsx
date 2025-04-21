@@ -9,7 +9,7 @@ export const Purpose = ({ title, subtitle, data, image, mainTitle, isReversed = 
   return (
     <div className="grandparen">
       <div className="overflow-x-hidden position-relative PurposeContainer  ">
-        <div className="row gap-3 p-0 m-0 align-items-center gap-md-0">
+        <div className="row gap-3 p-0 m-0 align-items-center justify-content-between  gap-md-0">
           <div className="col-12 d-flex flex-column gap-3 p-0 m-0 col-md-6">
             <h4 className="title">{title}</h4>
             <h2 className="MainTitle">{subtitle}</h2>
