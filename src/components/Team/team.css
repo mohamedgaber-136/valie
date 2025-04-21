@@ -10,7 +10,8 @@
 }
 
 .teamContainer {
-    padding: 100px 250px;
+    padding: 100px 180px;
+    padding-bottom: 0;
 }
 
 @media(max-width:992px) {
@@ -20,7 +21,7 @@
 }
 
 .AgentName {
-    font-weight: 300;
+    font-weight: 400;
     font-size: clamp(1.125rem, 2vw + 0.5rem, 1.6875rem);
     /* ~18px to 27px */
     font-family: 'ge-Medium';
@@ -52,6 +53,10 @@
 
 }
 
+.Agentexp.foot {
+    max-width: 230px;
+}
+
 .dataContent {
     border-bottom: 2px solid #bbbbbba4;
     padding: 20px;
@@ -76,6 +81,7 @@
 
 .DataContainer {
     margin-block: 300px;
+    margin-bottom: 150px;
 }
 
 .floatCard {

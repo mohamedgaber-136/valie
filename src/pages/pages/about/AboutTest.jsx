@@ -12,40 +12,43 @@ import CustomNavbar from "@/components/headers/CustomNavbar";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
 import { Purpose } from "@/components/Purpose/Purpose";
 import { PurposeReverse } from "@/components/Purpose/PurposeRevese";
-import './aboutStyle.css'
+import "./aboutStyle.css";
 
- const AboutTest = () => {
+const AboutTest = () => {
   const metadata = {
     title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
-    description: "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
+    description:
+      "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
   };
   return (
- <div className="AlbumParent position-relative">
-    <MetaComponent meta={metadata} />
-      <CustomNavbar dark={true}/>
+    <div className="AlbumParent position-relative">
+      <MetaComponent meta={metadata} />
+      <CustomNavbar dark={true} />
 
-      <main >
- <AboutUs right={true}/>
- <div className="bgItem"></div>
- <h2 className="text-center text-votes">خطوات التقييم</h2>
+      <main className="pt-5">
+        <AboutUs right={true} />
+        <div className="bgItem"></div>
+        {/* <h2 className="text-center text-votes">خطوات التقييم</h2> */}
 
-  <Purpose
-  title="ما هي عملية"
-  subtitle=" التقييم العقاري"
-  data={[
-` هي عمليه  تحديد قيم الاصول العقاريه او المنشأت الاقتصاديه علي اختلاف انواعها الاستفاده منها لغرض و وقت محدد و القيمه السوقيه وفقا للمعايير الدوليه للتفييم هي القيمه المقدره التي يتم تبادل الاصول علي اساسها وقت التقييم بين البائع والمشتري وفق لشروط مناسبه ضمن الصفقات التجاريه التي تعتمد علي الايجاب والقبول بين الطرفيين بعد عمليات التسويق المناسبه بحيث يكون كلا الطرفين علي علم ودرايه تامه بحقوقه والتزاماته
-`  ]}
-  image={img1}
-/>
+        <Purpose
+          mainTitle={"خطوات التقييم"}
+          title="ما هي عملية"
+          subtitle=" التقييم العقاري"
+          data={[
+            ` هي عمليه  تحديد قيم الاصول العقاريه او المنشأت الاقتصاديه علي اختلاف انواعها الاستفاده منها لغرض و وقت محدد و القيمه السوقيه وفقا للمعايير الدوليه للتفييم هي القيمه المقدره التي يتم تبادل الاصول علي اساسها وقت التقييم بين البائع والمشتري وفق لشروط مناسبه ضمن الصفقات التجاريه التي تعتمد علي الايجاب والقبول بين الطرفيين بعد عمليات التسويق المناسبه بحيث يكون كلا الطرفين علي علم ودرايه تامه بحقوقه والتزاماته
+`,
+          ]}
+          image={img1}
+        />
 
-<Purpose
-  title="أولا"
-  subtitle="فريق العمل "
-  data={[
-   "في شركة فالي للتقييم العقاري نعمل وفق أسس واضحة ومحددة لضمان أعلى دقة في عمليات التقييم، لذلك نقوم بتكوين فريق عمل متكامل لكل مشروع أو عميل على حده حتى يكون هناك فهم دقيق لمتطلبات واحتياجات العميل وأهدافه من عملية التقييم."
-  ]}
-  image={img2}
-/>
+        <Purpose
+          title="أولا"
+          subtitle="فريق العمل "
+          data={[
+            "في شركة فالي للتقييم العقاري نعمل وفق أسس واضحة ومحددة لضمان أعلى دقة في عمليات التقييم، لذلك نقوم بتكوين فريق عمل متكامل لكل مشروع أو عميل على حده حتى يكون هناك فهم دقيق لمتطلبات واحتياجات العميل وأهدافه من عملية التقييم.",
+          ]}
+          image={img2}
+        />
 
 <PurposeReverse
   title="ثانيا"
@@ -142,10 +145,9 @@ import './aboutStyle.css'
      </div>
       </div>
       </main>
- 
 
-        <Footer1 />
- </div>
-  )
-}
-export default AboutTest ;
+      <Footer1 />
+    </div>
+  );
+};
+export default AboutTest;

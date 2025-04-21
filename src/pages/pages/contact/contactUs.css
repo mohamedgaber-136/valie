@@ -37,8 +37,9 @@
   width: 1200px;
   z-index: -1;
   height: 450px !important;
-  top: 120px !important;
-  left: -20% !important;
+  /* top: 120px !important; */
+  top: 250px !important;
+  left: -30% !important;
   background-color: #124264;
 }
 
@@ -59,7 +60,7 @@
   font-size: clamp(1.5rem, 2vw + 1rem, 30px);
   line-height: 100%;
   letter-spacing: 0%;
-
+  padding-bottom: 100px;
 }
 
 .contact-title {

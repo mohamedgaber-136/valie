@@ -8,7 +8,7 @@ import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 
 import { Container, Form, InputGroup, Button } from "react-bootstrap";
 
-import {  Row, Col,   } from 'react-bootstrap';
+import {  Row, Col   } from 'react-bootstrap';
 
 
 import "./contactUs.css";
@@ -49,7 +49,7 @@ export default function ContactPage1() {
 }}> تواصل معنا </h4>
         <ContactForm />
 
-        <div className="row gap-5 gap-md-3 justify-content-center p-0 my-5">
+        <div className="row gap-5 gap-md-3 justify-content-center p-0 my-5 mb-0 pt-5">
           {contactData.map((item, index) => (
             <div
               key={index}

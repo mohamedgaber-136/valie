@@ -1,22 +1,23 @@
-import { useState, useRef } from 'react';
-import MetaComponent from '@/components/common/MetaComponent';
-import CustomNavbar from '@/components/headers/CustomNavbar';
-import Footer1 from '@/components/footers/Footer1';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { useState, useRef } from "react";
+import MetaComponent from "@/components/common/MetaComponent";
+import CustomNavbar from "@/components/headers/CustomNavbar";
+import Footer1 from "@/components/footers/Footer1";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 
-import './albumPage.css';
+import "./albumPage.css";
 
-import img1 from '/assets/imgs/team/img1.png';
-import img2 from '/assets/imgs/team/Image2.png';
-import img3 from '/assets/imgs/team/Image3.png';
-import img4 from '/assets/imgs/team/img4.png';
-import img5 from '/assets/imgs/team/img5.png';
-import img6 from '/assets/imgs/shapeOne.png';
-import rightimg from '/assets/imgs/icons/purposeRightImg.png';
+import img1 from "/assets/imgs/team/img1.png";
+import img2 from "/assets/imgs/team/Image2.png";
+import img3 from "/assets/imgs/team/Image3.png";
+import img4 from "/assets/imgs/team/img4.png";
+import img5 from "/assets/imgs/team/img5.png";
+import img6 from "/assets/imgs/shapeOne.png";
+import rightimg from "/assets/imgs/icons/purposeRightImg.png";
+import right from "../../../../public/assets/imgs/bottomContact2.png";
 
 const AlbumPage = () => {
   const data = [img1, img2, img3, img4, img5];
@@ -25,7 +26,8 @@ const AlbumPage = () => {
 
   const metadata = {
     title: "فالي | منصة التقييم العقاري وخدمات تقدير الممتلكات",
-    description: "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
+    description:
+      "فالي هي منصة احترافية تقدم خدمات التقييم العقاري بدقة وشفافية، من خلال فريق معتمد من الخبراء في مختلف القطاعات العقارية.",
   };
 
   const handleThumbnailClick = (index) => {
@@ -43,6 +45,9 @@ const AlbumPage = () => {
       <main className="albumContainer">
         <h4 className="teamTitle">معرض صورنا</h4>
         <div className="Blubg" />
+        <img src={right} className="rightTopAlbum" alt="right decoration" />
+        <img src={right} className="rightBottomAlbum" alt="right decoration" />
+
 
         {/* Main Swiper */}
         <Swiper
@@ -58,26 +63,26 @@ const AlbumPage = () => {
                 className="mainImage"
                 style={{
                   backgroundImage: `url(${src})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <h5 className="teamTitle">معرض الصور ({data.length} صورة)</h5>
+        <h5 className="teamTitle text-center">معرض الصور ({data.length} صورة)</h5>
 
         {/* Native Thumbnail List */}
         <div className="nativeThumbnails">
           {data.map((src, idx) => (
             <div
               key={idx}
-              className={`thumbImage ${activeIndex === idx ? 'active' : ''}`}
+              className={`thumbImage ${activeIndex === idx ? "active" : ""}`}
               style={{
                 backgroundImage: `url(${src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
               onClick={() => handleThumbnailClick(idx)}
             />

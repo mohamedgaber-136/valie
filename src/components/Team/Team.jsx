@@ -1,8 +1,8 @@
-import './team.css'
-import team1 from '../../../public/assets/imgs/team/1724329561760.png'
-import team2 from '../../../public/assets/imgs/team/358.png'
-import team3 from '../../../public/assets/imgs/team/Untitled-4.png'
-import vission from '../../../public/assets/imgs/icons/vission.png'
+import "./team.css";
+import team1 from "../../../public/assets/imgs/team/1724329561760.png";
+import team2 from "../../../public/assets/imgs/team/358.png";
+import team3 from "../../../public/assets/imgs/team/Untitled-4.png";
+import vission from "../../../public/assets/imgs/icons/vission.png";
 export const Team = () => {
     const data = [
         {        name:'عبدالمجيد بن حمد العليان',
@@ -62,5 +62,5 @@ float:false
            )}
         </div>
     </div>
-  )
-}
+  );
+};

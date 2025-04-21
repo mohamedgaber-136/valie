@@ -1,19 +1,18 @@
 import { activeInputFocus } from "@/utlis/activeInputFocus";
 import { useEffect, useState } from "react";
-import '../../../public/assets/css/custom/contact.css'
-import right from '../../../public/assets/imgs/rightContact.png'
-import left from '../../../public/assets/imgs/leftContact.png'
+import "../../../public/assets/css/custom/contact.css";
+import right from "../../../public/assets/imgs/rightContact.png";
+import left from "../../../public/assets/imgs/leftContact.png";
 export default function ContactForm() {
-
   useEffect(() => {
     // Focus event
     activeInputFocus();
   }, []);
   return (
-    <section className="section px-2 my-5 flex jusity-center  " >
+    <section className="section px-2 flex jusity-center my-5">
       <div className="container-sub bg-Contact  position-relative rounded-25  p-4 p-md-5 rounded">
-      <img src={left} alt=""  className="leftImgContact"/>
-      <img src={right} alt="" className="rightImgContact" />
+        <img src={left} alt="" className="leftImgContact" />
+        <img src={right} alt="" className="rightImgContact" />
         <div className="">
           <h3 className="mb-10 text-center  text-white fw-bold wow fadeInUp" style={{                     fontFamily: 'ge-light',
 }}>
@@ -108,14 +107,12 @@ export default function ContactForm() {
              
                 
                 */}
-              </div>
-            </form>
-          </div>
-
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-  
     </section>
   );
 }

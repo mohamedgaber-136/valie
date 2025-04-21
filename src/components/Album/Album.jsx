@@ -1,30 +1,24 @@
-import './Album.css'
-import img1 from '../../../public/assets/imgs/team/img1.png'
-import img2 from '../../../public/assets/imgs/team/Image2.png'
-import img3 from '../../../public/assets/imgs/team/Image3.png'
-import img4 from '../../../public/assets/imgs/team/img4.png'
-import img5 from '../../../public/assets/imgs/team/img5.png'
+import "./Album.css";
+import img1 from "../../../public/assets/imgs/team/img1.png";
+import img2 from "../../../public/assets/imgs/team/Image2.png";
+import img3 from "../../../public/assets/imgs/team/Image3.png";
+import img4 from "../../../public/assets/imgs/team/img4.png";
+import img5 from "../../../public/assets/imgs/team/img5.png";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
-import './Album.css'
+import "./Album.css";
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
-import { useNavigate } from 'react-router-dom'
+import { FreeMode, Pagination } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 export const Album = () => {
-    const data= [ 
-        img1,
-        img2,
-        img3,
-        img4,
-        img5,
-    ]
-    const navigate = useNavigate()
+  const data = [img1, img2, img3, img4, img5];
+  const navigate = useNavigate();
   return (
     <div className='container-fluid '>
                       <  h2 className='teamTitle'>معرض الصور</h2> 
@@ -52,5 +46,5 @@ export const Album = () => {
 </div>
       
     </div>
-  )
-}
+  );
+};

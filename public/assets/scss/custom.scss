@@ -346,7 +346,7 @@ html, body {
 }
 .footerText{
   color: #989897;
-  font-family: 'GE SS Two';
+  font-family: 'GE SS Two' !important;
 font-weight: 300;
 font-size: clamp(1.5rem, 3vw + 1rem, 39px);
 line-height: 1;

@@ -37,7 +37,8 @@ body {
 .contentPurpose::before {
     content: '';
     position: absolute;
-    right: -15px;
+    inset-inline-start: -15px;
+    /* right: -15px; */
     top: 50%;
     transform: translateY(-50%);
     width: 7px;
@@ -47,7 +48,12 @@ body {
 }
 
 .PurposeContainer {
-    padding: 100px 250px;
+    padding: 100px 0;
+    /* padding: 100px 200px; */
+}
+
+.contentContainer {
+    padding: 0 180px;
 }
 
 @media(max-width:992px) {
@@ -55,15 +61,21 @@ body {
         padding: 20px;
     }
 
+    .contentContainer {
+        padding: 20px;
+    }
+
     .floatImg {
-        right: 23px !important;
+        inset-inline-start: 23px !important;
+        /* right: 23px !important; */
         height: auto !important;
 
     }
 
     .floatImg2 {
         position: relative;
-        right: -23px !important;
+        inset-inline-start: -23px !important;
+        /* right: -23px !important; */
     }
 }
 
@@ -80,7 +92,8 @@ body {
 }
 
 .leftImg {
-    right: 5%;
+    /* right: 5%; */
+    inset-inline-start: 5%;
     top: 0;
     z-index: 98;
 }
@@ -91,10 +104,12 @@ body {
 
 .floatImg {
     position: relative;
-    right: 250px;
+    inset-inline-start: 0px;
+    /* inset-inline-start: 250px; */
+    /* right: 250px; */
     z-index: 99;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .floatImg2 {
