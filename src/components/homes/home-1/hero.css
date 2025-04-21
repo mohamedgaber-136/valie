@@ -32,6 +32,7 @@
 .banner-home1 {
     width: 100vw;
     height: 100vh;
+    max-height: 150vh;
     background-image: url(../../../../public/assets/imgs/BG.png);
     background-size: cover;
     background-position: center;
