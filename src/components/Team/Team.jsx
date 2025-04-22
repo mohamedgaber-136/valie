@@ -11,7 +11,7 @@ export const Team = () => {
             title:'الشريك  و المدير التنفيذي',
             float:false,
             
-            agent:<span  className='Lheight'>مدرب معتمد و عضو أساسي  في الهيئه<br />  السعودية للمقيمين المعتمدين</span>
+            agent:<span  className='Lheight' style={{fontFamily:'ge-light'}}>مدرب معتمد و عضو أساسي  في الهيئه<br />  السعودية للمقيمين المعتمدين</span>
          },
          {
            title:'الشريك المؤسس و الرئيس التنفيذي',
@@ -19,14 +19,14 @@ export const Team = () => {
             img:team2,
             name:'وحيد بن أحمد الجساس',
          
-            agent:<span className='Lheight'>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
+            agent:<span className='Lheight' style={{fontFamily:'ge-light'}}>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
                 float:true
          },
         {
             img:team1,
             name:' عبدالله بن إبراهيم السكران  ',
             title:' مدير التقييم العقاري  ',
-            agent:<span className='Lheight'>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
+            agent:<span className='Lheight' style={{fontFamily:'ge-light'}}>   عضو اساسي زميل في الهيئه السعودية <br /> للمقيمين المعتمدين      </span>,
 
 float:false
         },
@@ -42,15 +42,13 @@ float:false
              <img src={item.img} className='profileImg' alt="" />
                 </div>
              <div className="d-flex align-items-center justify-content-center flex-column gap-2 dataContent">
-             <h2 className='AgentName   text-center'>
+             <h2 className='AgentName   text-center' >
                 {item.name}
              </h2>
-             <h4 className='AgentTitle   text-center'>
+             <h4 className='AgentTitle   text-center' style={{fontFamily:'ge-light'}}>
                 {item.title}
              </h4>
-             <h6 className='Agentexp   text-center'>
-                {item.experience}
-             </h6>
+        
              </div>
              <h6 className='Agentexp  text-center'>
                 {item.agent}
